@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The 2026 Election Declassification: An Annotated Index</title>
+<meta name="description" content="A document-by-document index of the 59 files released by the White House alongside the 16 July 2026 primetime address on election security.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+Condensed:wght@500;600;700&family=IBM+Plex+Serif:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#E4E7E3; --card:#F2F4F0; --ink:#161A17; --ink-2:#454B45; --muted:#71786F;
+  --rule:#C3C9C0; --rule-2:#D6DAD3;
+  --trump:#A8322A; --warr:#24596E; --ratcliffe:#7A5A1E; --none:#71786F; --warn:#8A5A12;
+  --mono:'IBM Plex Mono',ui-monospace,Menlo,monospace;
+  --cond:'IBM Plex Sans Condensed',system-ui,sans-serif;
+  --serif:'IBM Plex Serif',Georgia,serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--serif);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:1240px;margin:0 auto;padding:0 24px}
+
+/* hero */
+.hero{border-bottom:2px solid var(--ink);padding:64px 0 32px}
+.eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin:0 0 20px}
+h1{font-family:var(--cond);font-weight:700;font-size:clamp(38px,6.2vw,74px);line-height:1.02;letter-spacing:-.02em;margin:0 0 20px;max-width:16ch}
+.standfirst{font-size:20px;line-height:1.5;max-width:62ch;margin:0 0 32px;color:var(--ink-2)}
+.standfirst strong{color:var(--ink)}
+
+/* stamp legend = signature */
+.legend{border:1px solid var(--rule);background:var(--card);padding:20px 22px;max-width:760px}
+.legend h4{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;margin:0 0 4px;color:var(--muted);font-weight:600}
+.legend p.why{font-size:14px;color:var(--ink-2);margin:0 0 14px;line-height:1.5}
+.legend ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.legend li{display:flex;gap:12px;align-items:baseline;font-size:14px}
+.legend .n{font-family:var(--mono);font-size:12px;color:var(--muted);min-width:2.4em}
+
+.chip{font-family:var(--mono);font-size:10px;font-weight:600;letter-spacing:.09em;padding:3px 7px;border:1px solid currentColor;white-space:nowrap;display:inline-block}
+.stamp-trump{color:var(--trump)} .stamp-warr{color:var(--warr)}
+.stamp-ratcliffe{color:var(--ratcliffe)} .stamp-none{color:var(--none)}
+.chip.plain{color:var(--muted);border-color:var(--rule)}
+.chip.warn{color:var(--warn);border-style:dashed}
+
+/* layout */
+.cols{display:grid;grid-template-columns:296px 1fr;gap:56px;padding:48px 0 96px;align-items:start}
+nav.toc{position:sticky;top:24px;max-height:calc(100vh - 48px);overflow-y:auto;padding-right:8px;border-right:1px solid var(--rule)}
+nav.toc>h4{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0 0 16px;font-weight:600}
+.toc-sec{margin-bottom:22px}
+.toc-head{display:block;font-family:var(--cond);font-weight:700;font-size:15px;line-height:1.25;text-decoration:none;margin-bottom:7px;padding-bottom:7px;border-bottom:1px solid var(--rule-2)}
+.toc-num{font-family:var(--mono);font-size:11px;color:var(--muted);font-weight:500}
+.toc-count{font-family:var(--mono);font-size:10px;color:var(--muted);font-weight:400}
+.toc-list{list-style:none;margin:0;padding:0;counter-reset:t}
+.toc-list li{counter-increment:t;margin:0 0 3px;font-size:13px;line-height:1.35;display:flex;gap:7px}
+.toc-list li::before{content:counter(t,decimal-leading-zero);font-family:var(--mono);font-size:10px;color:var(--muted);flex:none;padding-top:2px}
+.toc-list a{text-decoration:none;color:var(--ink-2);border-bottom:1px solid transparent}
+.toc-list a:hover,.toc-head:hover{color:var(--trump);border-bottom-color:currentColor}
+
+/* sections */
+.sec{margin-bottom:72px;scroll-margin-top:20px}
+.sec-head{border-top:2px solid var(--ink);padding-top:16px;margin-bottom:32px}
+.sec-num{font-family:var(--mono);font-size:12px;font-weight:600;color:var(--muted);letter-spacing:.1em}
+.sec-head h2{font-family:var(--cond);font-weight:700;font-size:clamp(26px,3.4vw,38px);line-height:1.1;letter-spacing:-.01em;margin:4px 0 8px;max-width:22ch}
+.sec-meta{font-family:var(--mono);font-size:12px;color:var(--muted);margin:0 0 14px}
+.sec-meta a{color:var(--warr)}
+.sec-note{font-size:16px;color:var(--ink-2);max-width:70ch;margin:0;padding-left:16px;border-left:2px solid var(--rule)}
+
+/* docs */
+.doc{background:var(--card);border:1px solid var(--rule);margin-bottom:20px;scroll-margin-top:20px}
+.doc-key{border-left:3px solid var(--trump)}
+.doc-head{padding:20px 24px 16px;border-bottom:1px solid var(--rule-2)}
+.doc-head h3{font-family:var(--cond);font-weight:600;font-size:21px;line-height:1.24;margin:0 0 11px;letter-spacing:-.005em}
+.key-mark{font-family:var(--mono);font-size:9px;font-weight:600;letter-spacing:.12em;color:var(--trump);border:1px solid currentColor;padding:2px 5px;vertical-align:middle;margin-left:6px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:11px}
+.fname{margin:0;font-size:12px;font-family:var(--mono);color:var(--muted);line-height:1.7}
+.fname code{font-size:11px;word-break:break-all;background:none}
+a.open{font-weight:600;color:var(--warr);text-decoration:none;border-bottom:1px solid currentColor;white-space:nowrap;margin-right:8px}
+a.open:hover{color:var(--trump)}
+.doc-body{padding:18px 24px 22px}
+.doc-body p{margin:0 0 14px;max-width:78ch}
+.doc-body p:last-child{margin-bottom:0}
+.lab{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0 0 5px !important;font-weight:600}
+.doc-body .lab:not(:first-child){margin-top:18px !important}
+.flag{font-size:13px;font-style:italic;color:var(--warn);border-left:2px solid currentColor;padding-left:12px;margin-top:16px !important}
+
+footer{border-top:2px solid var(--ink);padding:28px 0 72px;font-family:var(--mono);font-size:12px;color:var(--muted);line-height:1.8}
+footer a{color:var(--warr)}
+
+@media (max-width:920px){
+  .cols{grid-template-columns:1fr;gap:32px;padding-top:32px}
+  nav.toc{position:static;max-height:none;border-right:0;border-bottom:1px solid var(--rule);padding-bottom:24px;overflow:visible}
+  body{font-size:16px}
+  .hero{padding:40px 0 24px}
+  .doc-head,.doc-body{padding-left:16px;padding-right:16px}
+  .wrap{padding:0 16px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+a:focus-visible{outline:2px solid var(--trump);outline-offset:2px}
+@media print{
+  nav.toc{display:none} .cols{grid-template-columns:1fr}
+  body{background:#fff;font-size:11pt} .doc{break-inside:avoid;background:#fff}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Annotated index &middot; compiled 17 July 2026 &middot; 59 documents</p>
+    <h1>The 2026 election declassification</h1>
+    <p class="standfirst">Every file the White House released alongside the 16 July primetime address, read and summarised. The release is organised into four sections; the speech said five. <strong>Section 05, if it exists, is not in this set.</strong></p>
+    <div class="legend">
+      <h4>Read by declassification stamp</h4>
+      <p class="why">Three separate authorities signed off on this release, on three different dates. The stamps sort the documents better than the folders do &mdash; and the material that undercuts the speech clusters on tracks the speech's authors seemingly did not read. Every entry below is tagged with its stamp.</p>
+      <ul>
+        <li><span class="chip stamp-trump">TRUMP &middot; 3 JUL</span> <span class="n">10</span> <span>Declassified by President Trump. The finished intelligence &mdash; assessments, the dissent, the ODNI email chains.</span></li>
+        <li><span class="chip stamp-warr">WARRINGTON &middot; 10 JUL</span> <span class="n">31</span> <span>Declassified or approved for release by the Counsel to the President. All the Michigan material, most of the China voter-data reporting.</span></li>
+        <li><span class="chip stamp-ratcliffe">RATCLIFFE &middot; 1 JUL</span> <span class="n">1</span> <span>Declassified by the Director of the CIA. The Venezuela note, and nothing else.</span></li>
+        <li><span class="chip stamp-none">NO STAMP</span> <span class="n">17</span> <span>No declassification marking &mdash; written unclassified in 2026 for this release, or released without one.</span></li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+<div class="cols">
+
+<nav class="toc" aria-label="Contents">
+  <h4>Contents</h4>
+  <div class="toc-sec">
+  <a class="toc-head" href="#sec1"><span class="toc-num">01</span> Vulnerabilities in Electronic Voting and Ballot-Counting Systems <span class="toc-count">8</span></a>
+  <ol class="toc-list"><li><a href="#sec1-01">CISA Election Report</a></li><li><a href="#sec1-02">NICM: Vulnerabilities in US 2020 Election Infrastructure</a></li><li><a href="#sec1-03">NICA 2020-06885D: Foreign Threats to 2020 US Federal Elections</a></li><li><a href="#sec1-04">NICM 2020-09381: Making the Case That China Has Taken Some Steps to Influence the Presidential Election</a></li><li><a href="#sec1-05">Email: ICA Comments re Minority View</a></li><li><a href="#sec1-06">Email: Everyone's favorite topic</a></li><li><a href="#sec1-07">CIA WIRe: China — Cyber Activities Probably Prelude to Election Espionage</a></li><li><a href="#sec1-08">CIA Note: Venezuela's Electronic Voting Manipulation Capabilities, 2004–2020</a></li></ol>
+</div><div class="toc-sec">
+  <a class="toc-head" href="#sec2"><span class="toc-num">02</span> China's Acquisition and Exploitation of American Voter Data <span class="toc-count">23</span></a>
+  <ol class="toc-list"><li><a href="#sec2-01">WHTF Government Transparency — States Statement</a></li><li><a href="#sec2-02">US Voter Registration for 6 States — Network Defense Notice (Substantive Revision)</a></li><li><a href="#sec2-03">200M Voter Records Compromised</a></li><li><a href="#sec2-04">Summary — PART 1</a></li><li><a href="#sec2-05">Summary — PART 2</a></li><li><a href="#sec2-06">Summary — PART 3</a></li><li><a href="#sec2-07">18 States Memo</a></li><li><a href="#sec2-08">PRC Analysis on US Voter Registration Information from Multiple States</a></li><li><a href="#sec2-09">PRC US Voter Data for Cities within Seven States, 2023</a></li><li><a href="#sec2-10">PRC Collection of US Consumer, Military and Voter Registration Databases</a></li><li><a href="#sec2-11">PRC Discussion of Targeting the 2024 US Elections</a></li><li><a href="#sec2-12">PRC US Presidential Election-Related Intelligence in 2020</a></li><li><a href="#sec2-13">CIA Note: Sensitive PRC Reporting from 2018–2020</a></li><li><a href="#sec2-14">President's Daily Brief, 25 June 2020</a></li><li><a href="#sec2-15">Email: NSA deliberately massaging elections PDB (20 Nov)</a></li><li><a href="#sec2-16">Email: NSA deliberately messaging elections PDB (23 Nov)</a></li><li><a href="#sec2-17">Email: For IC coord by 7 Oct — NIC alternative analysis on China/election</a></li><li><a href="#sec2-18">Email: Please coord by COB 9/1 — four-country election security graphic</a></li><li><a href="#sec2-19">FBI Albany IIR provided to Chairman Grassley</a></li><li><a href="#sec2-20">Tasking 3: Albany Briefing Handout</a></li><li><a href="#sec2-21">NICA: Foreign Threats to 2020 US Federal Elections (duplicate)</a></li><li><a href="#sec2-22">CIA WIRe: China — Cyber Activities Probably Prelude to Election Espionage (duplicate)</a></li><li><a href="#sec2-23">Email: Everyone's favorite topic (duplicate)</a></li></ol>
+</div><div class="toc-sec">
+  <a class="toc-head" href="#sec3"><span class="toc-num">03</span> Michigan Voter-Registration Investigation <span class="toc-count">25</span></a>
+  <ol class="toc-list"><li><a href="#sec3-01">Original Muskegon MSP Referral</a></li><li><a href="#sec3-02">Opening EC</a></li><li><a href="#sec3-03">Election Consult re Voter Registrations (W.D. Mich.)</a></li><li><a href="#sec3-04">Database Checks Spreadsheet EC — 91 of 107</a></li><li><a href="#sec3-05">Voter Fraud Spreadsheet</a></li><li><a href="#sec3-06">Searches EC (1)</a></li><li><a href="#sec3-07">Searches EC (2)</a></li><li><a href="#sec3-08">Searches EC (3)</a></li><li><a href="#sec3-09">Guardian Complaint — Southfield, MI</a></li><li><a href="#sec3-10">FD-302: Widespread Fake Registrations</a></li><li><a href="#sec3-11">FD-302: Gift Cards / Suppress Trump</a></li><li><a href="#sec3-12">FD-302: Paid By Registration, Others Falsified</a></li><li><a href="#sec3-13">FD-302: Pot for Registrations</a></li><li><a href="#sec3-14">FD-302: Sit in Car / Fake Registrations</a></li><li><a href="#sec3-15">FD-302: Other States</a></li><li><a href="#sec3-16">FD-302: Probably Forged</a></li><li><a href="#sec3-17">FD-302 (196)</a></li><li><a href="#sec3-18">FD-302 (233)</a></li><li><a href="#sec3-19">FBI Grand Rapids letter</a></li><li><a href="#sec3-20">Email: preparing to close / limited scope</a></li><li><a href="#sec3-21">Email: not comfortable closing the case</a></li><li><a href="#sec3-22">PIN EDMI declination</a></li><li><a href="#sec3-23">PIN GBI declination</a></li><li><a href="#sec3-24">PIN 2023 delay memo</a></li><li><a href="#sec3-25">Four Year Case Timeline</a></li></ol>
+</div><div class="toc-sec">
+  <a class="toc-head" href="#sec4"><span class="toc-num">04</span> Noncitizens on State Voter Rolls <span class="toc-count">2</span></a>
+  <ol class="toc-list"><li><a href="#sec4-01">Preventing Alien Voting — Alien Voter Registration Summary</a></li><li><a href="#sec4-02">Recognizing and Addressing Threats to Statewide Voter Registration Databases</a></li></ol>
+</div>
+</nav>
+
+<main>
+  <section class="sec" id="sec1">
+  <div class="sec-head">
+    <span class="sec-num">01</span>
+    <h2>Vulnerabilities in Electronic Voting and Ballot-Counting Systems</h2>
+    <p class="sec-meta">8 documents &middot; <a href="https://drive.google.com/drive/folders/1Y8RvaxnuspdGtL_ubaVR-lmw1ffxYknV" target="_blank" rel="noopener">Open folder in Drive &rarr;</a></p>
+    <p class="sec-note">The thinnest section, and the one furthest from the speech's claims. Two of eight documents are the mainline IC assessments that the dissent argues against; two more are the dissent and the FBI's rebuttal of it. Nothing here supports vote manipulation, and two documents actively disclaim it.</p>
+  </div>
+  <article class="doc" id="sec1-01">
+  <header class="doc-head">
+    <h3>CISA Election Report</h3>
+    <div class="chips"><span class="chip stamp-none" title="No declassification stamp — produced unclassified, or released without a declassification marking">NO STAMP</span><span class="chip plain">6 pp</span><span class="chip plain">13 July 2026</span></div>
+    <p class="fname"><a class="open" href="https://drive.google.com/file/d/15cb47CR1VqaHaen2XaMKXgYoMiehSrwL/view" target="_blank" rel="noopener">Open in Drive &rarr;</a> <code>CISA Election Report - FINAL.pdf</code></p>
+  </header>
+  <div class="doc-body">
+    <p class="lab">What it is</p>
+    <p>A technical summary of CISA's 2019–2024 election security work: source-code and binary analysis of election software conducted with Idaho National Laboratory under the Critical Product Evaluation program, penetration testing of state, local, tribal and territorial networks, and incident response. Findings are that election software contains the ordinary spectrum of vulnerabilities; that certification regimes block timely patching, with some regimes requiring no patches for months before an election; and that SLTT networks lack basic segmentation, with assessors gaining full network control within hours or days in multiple cases. Cites Halderman's ImageCast X barcode analysis from Curling v. Raffensperger. Mitigation recommendations: harmonize patch and certification rules, use human-readable paper ballots, and conduct post-election manual audits before certification.</p>
+    <p class="lab">Why it matters</p>
+    <p>Written for this release and unclassified, but it cuts against the speech rather than for it. Its recommendations — paper ballots, manual audits — are the mainstream election-security consensus, not a case for the claims Trump made. Most usefully, it declines to endorse the Puerto Rico work: it states that ODNI commissioned a forensic examination of Dominion devices from Mojave Research, and that while CISA reviewed the report, the agency had no access to the devices and could not perform its own examination. That is the agency holding the pen refusing to vouch for the administration's centerpiece hardware finding.</p>
+    
+  </div>
+</article><article class="doc" id="sec1-02">
+  <header class="doc-head">
+    <h3>NICM: Vulnerabilities in US 2020 Election Infrastructure</h3>
+    <div class="chips"><span class="chip stamp-none" title="No declassification stamp — produced unclassified, or released without a declassification marking">NO STAMP</span><span class="chip plain">5 pp</span><span class="chip plain">15 January 2020</span></div>
+    <p class="fname"><a class="open" href="https://drive.google.com/file/d/1IyyoGeGwYIwDWmjYzM-rGsjuuWeokTb8/view" target="_blank" rel="noopener">Open in Drive &rarr;</a> <code>NICM_V~1.PDF</code></p>
+  </header>
+  <div class="doc-body">
+    <p class="lab">What it is</p>
+    <p>National Intelligence Council memorandum on infrastructure vulnerabilities ahead of the 2020 election. Assesses that cyber operations against tabulation could delay results reporting and create public uncertainty but probably would not affect the integrity of certified results, because tabulated results are stored independently of the copies displayed on results websites. Notes risk-limiting audits, then required in 38 states. Cites the Pennsylvania Blue Ribbon Commission finding that transmission of preliminary results to public websites is vulnerable to man-in-the-middle attacks that would not alter the separately stored certified copies. Recommends physical and cyber hygiene, third-party vendor verification, public messaging, and private messaging to adversaries.</p>
+    <p class="lab">Why it matters</p>
+    <p>The most quotable document in the release, for reasons the White House cannot have intended. A full section is headed 'False Manipulation Narratives Could Undermine Public Confidence.' It warns that adversaries could make wholly fabricated claims — the example given is announcing they had compromised all US voting machines — which would be difficult, time-consuming, or impossible for the government to disprove; that much of the voting public knows little about election administration, which could let false narratives gain traction; and that a widely publicized compromise would undercut confidence even if nothing was manipulated. It recommends timely public messaging to make US officials the trusted source. Written in January 2020, it describes the 2026 event it was released to support.</p>
+    <p class="flag">Uploaded to Drive with a truncated 8.3 filename (NICM_V~1.PDF). Byte size matches the original; content intact.</p>
+  </div>
+</article><article class="doc" id="sec1-03">
+  <header class="doc-head">
+    <h3>NICA 2020-06885D: Foreign Threats to 2020 US Federal Elections</h3>
+    <div class="chips"><span class="chip stamp-trump" title="Declassified by President Trump, 3 July 2026">TRUMP · 3 JUL</span><span class="chip plain">8 pp</span><span class="chip plain">19 August 2020</span><span class="chip plain">DUPLICATE</span></div>
+    <p class="fname"><a class="open" href="https://drive.google.com/file/d/1LLkSL91oToXGQtrI5j-M3hom81uVABET/view" target="_blank" rel="noopener">Open in Drive &rarr;</a> <code>NICA_ Foreign Threats to 2020 US election_19AUG2020 - DECLASS_REDACTED.pdf</code></p>
+  </header>
+  <div class="doc-body">
+    <p class="lab">What it is</p>
+    <p>The mainline National Intelligence Council assessment on foreign election threats, in a downgraded version. Judges that Russia, China, Iran and many non-state actors have the capability to compromise election infrastructure but would find it difficult to manipulate voting at scale without detection. On Russia: assesses it is using a range of measures primarily to denigrate Biden, directing or encouraging proxies to spread claims about him, with some Kremlin-linked actors seeking to boost Trump's candidacy on social media; names Derkach and Kilimnik among proxies advancing a Burisma corruption narrative, with the stated aim of defeating Biden and ensuring Trump's victory. On China: assesses Beijing prefers Trump be defeated and has stepped up critical public rhetoric, but did not intend to try to affect the election. Scope note explicitly states the paper makes no assessment about the impact of these efforts.</p>
+    <p class="lab">Why it matters</p>
+    <p>Released under Trump's own name, and it contains the Russia-preferred-Trump finding in plain language. Also supplies the baseline that every other China document in the release is measured against, and the reason the dissent exists at all. The scope note matters for anyone trying to read impact into it: the assessment declines to make one.</p>
+    
+  </div>
+</article><article class="doc" id="sec1-04">
+  <header class="doc-head">
+    <h3>NICM 2020-09381: Making the Case That China Has Taken Some Steps to Influence the Presidential Election</h3>
+    <div class="chips"><span class="chip stamp-trump" title="Declassified by President Trump, 3 July 2026">TRUMP · 3 JUL</span><span class="chip plain">7 pp</span><span class="chip plain">16 October 2020</span></div>
+    <p class="fname"><a class="open" href="https://drive.google.com/file/d/1qpGWzPbsb8W0TOOgkosYWHp83T6AGhkl/view" target="_blank" rel="noopener">Open in Drive &rarr;</a> <code>NICM_ChinaStepsToInfluenceElection_16OCT2020_DECLASS_REDACTED.pdf</code></p>
+  </header>
+  <div class="doc-body">
+    <p class="lab">What it is</p>
+    <p>The minority view itself, written by the National Intelligence Officer for Cyber and the Director of Election Threat Analysis. Header reads 'ALTERNATIVE ANALYSIS.' Scope note states it offers an alternative perspective to the IC's assessment that China has not attempted to influence the outcome, and that it 'was provided to the IC for comment before publication but is not an IC-coordinated memorandum.' The authors assess Beijing took at least low-level, exploratory steps to undermine Trump's reelection chances through overt messaging, nascent online covert influence capability, diplomatic measures and economic leverage; state these probably did not include Beijing's most aggressive options; and record low-to-medium confidence in their own assessments. They state they agree with the large majority of the IC's judgments about China's calculus. The memo reproduces the mainline view alongside: that Beijing has not deployed influence efforts intended to change the outcome, prefers stability in the relationship, and wants to preserve the ability to repair relations afterward. It concedes that much of the available reporting would be consistent with either view.</p>
+    <p class="lab">Why it matters</p>
+    <p>This is the source Trump quoted. The White House released it with every disqualifying marking intact — the alternative-analysis banner, the not-IC-coordinated disclaimer, the low-to-medium confidence, the authors' own concession that the reporting is ambiguous and that they agree with most of the mainline. The gap between what the speech said this document shows and what the document says about itself is the story, and it is legible from the first page.</p>
+    
+  </div>
+</article><article class="doc" id="sec1-05">
+  <header class="doc-head">
+    <h3>Email: ICA Comments re Minority View</h3>
+    <div class="chips"><span class="chip stamp-warr" title="Declassified and/or approved for public release by Counsel to the President Warrington, 10 July 2026">WARRINGTON · 10 JUL</span><span class="chip plain">2 pp</span><span class="chip plain">30 December 2020</span></div>
+    <p class="fname"><a class="open" href="https://drive.google.com/file/d/17tVQMSrvFEAR9ppyvEx12G9s1bLa-bIV/view" target="_blank" rel="noopener">Open in Drive &rarr;</a> <code>EMAIL_ICA.CommentsReMinorityView_30DEC2020_DECLASS REDACTED.pdf</code></p>
+  </header>
+  <div class="doc-body">
+    <p class="lab">What it is</p>
+    <p>Email from Nikki Floris, then Deputy Assistant Director of the FBI's Counterintelligence Division, sent to the Director of Election Threat Analysis and copied to Tonya Ugoretz, commenting on the updated ICA draft. The FBI is fine with a minority-view textbox but insists its analysis meet the same analytic standards as the rest of the ICA — 'an absolute red line for the FBI' — and opposes putting the minority view in the Key Judgments, where without context and source descriptions it would be given parity with the ICA's assessments. Point by point: on the NIO's claim that China's leaders 'intended' to affect candidates, the IC has repeatedly stated on a body of intelligence that there is no evidence of such intention, and stating it that bluntly is 'extremely misleading.' On sourcing, minimizing source descriptions gives clandestine reporting of dubious credibility, poorly identified sourcing chains and minimal track records the same weight as SIGINT on identified senior Chinese diplomatic and intelligence figures. On the claim China 'may' have encouraged protests, there is no evidence in the reporting and the citations do not support it — 'a misrepresentation of the underlying reports.' On the dissent's collection-gaps argument, citing the absence of evidence is 'an absolute red line for us.' The forwarding note records that the FBI had previously said Director Wray signed off on the ICA text.</p>
+    <p class="lab">Why it matters</p>
+    <p>The single most damaging document in the release, and the administration published it. It is a named senior FBI official's contemporaneous, itemized finding that the analysis Trump built a primetime address on failed the IC's own tradecraft standards. Floris is on the record and reachable. Note also that this sits in Section 01 rather than with the China material in Section 02, which is either filing drift or a deliberate burial — either way, worth asking about.</p>
+    
+  </div>
+</article><article class="doc" id="sec1-06">
+  <header class="doc-head">
+    <h3>Email: Everyone's favorite topic</h3>
+    <div class="chips"><span class="chip stamp-trump" title="Declassified by President Trump, 3 July 2026">TRUMP · 3 JUL</span><span class="chip plain">1 p</span><span class="chip plain">23 December 2021</span><span class="chip plain">DUPLICATE</span></div>
+    <p class="fname"><a class="open" href="https://drive.google.com/file/d/1ulsUfJerYZeLrhZr_VE0p5tyx0fi7xZK/view" target="_blank" rel="noopener">Open in Drive &rarr;</a> <code>EMAIL_Everyone's favorite topic_23DEC2021_DECLASS_REDACTED.pdf</code></p>
+  </header>
+  <div class="doc-body">
+    <p class="lab">What it is</p>
+    <p>Email from the National Intelligence Officer for Cyber — the minority view's author — a year after the ICA. He argues that a new IC report cites some of the same intelligence and logic used in 2020 to conclude that particular Chinese units were not engaged in election influence, and now uses it to argue that China IS influencing a (redacted) election. He notes the report attributes activity to 'the Chinese military' when in 2020 the IC said it did not know who it was, and characterizes as an election-influence unit the same unit he and a colleague said was influencing the 2020 US election. He asks on what logical, non-partisan basis the IC makes calls one way or the other, and says it should be highlighted for oversight.</p>
+    <p class="lab">Why it matters</p>
+    <p>The dissenter's strongest argument, in his own words: an inconsistency claim about how the IC applies attribution standards across cases. It is a real methodological complaint and shouldn't be waved off — but it is an argument about IC consistency, not evidence that China altered a US election, and it does not answer Floris's sourcing objections.</p>
+    
+  </div>
+</article><article class="doc" id="sec1-07">
+  <header class="doc-head">
+    <h3>CIA WIRe: China — Cyber Activities Probably Prelude to Election Espionage</h3>
+    <div class="chips"><span class="chip stamp-warr" title="Declassified and/or approved for public release by Counsel to the President Warrington, 10 July 2026">WARRINGTON · 10 JUL</span><span class="chip plain">2 pp</span><span class="chip plain">Summer 2020</span><span class="chip plain">DUPLICATE</span></div>
+    <p class="fname"><a class="open" href="https://drive.google.com/file/d/1qfMyTpNNTRH8j0bPrTJDHgDN6ov-zRI0/view" target="_blank" rel="noopener">Open in Drive &rarr;</a> <code>CIA Wire Memo Summer 2020 DECLASS REDACTED.pdf</code></p>
+  </header>
+  <div class="doc-body">
+    <p class="lab">What it is</p>
+    <p>CIA World Intelligence Review item on Chinese cyber activity around the campaign. Reports that China is probing the presidential campaign to tailor collection on US-China policy positions, and that Chinese cyber actors have done so in every US presidential campaign since at least 2008. Since 2018, actors known in the private sector as APT31 have targeted personal email accounts of senior US leadership including officials in the Executive Office of the President, Congress and the federal judiciary. As of 20 May, APT31 sent spear-phishing emails with tracking links to Gmail accounts of campaign staffers; on 4 June, Google announced APT31 was targeting the campaign, and Google and the FBI briefed campaign officials, with Google stating publicly that the attempts were unsuccessful. Records that during the past year Chinese cyber actors collected US election-related information from voter databases, a polling data company, political and nonprofit organizations, fundraisers and campaign advisory organizations.</p>
+    <p class="lab">Why it matters</p>
+    <p>Documents real Chinese cyber espionage against the Biden campaign — and then states the conclusion the speech needed to avoid: the IC assesses that China does not currently intend to covertly interfere to try to sway the outcome of the election, although the activity could enable such operations if Beijing decided to. Note the target was Biden's campaign, not Trump's, and Google says the phishing failed. Another Warrington-track release that contradicts the Trump-track framing.</p>
+    
+  </div>
+</article><article class="doc" id="sec1-08">
+  <header class="doc-head">
+    <h3>CIA Note: Venezuela's Electronic Voting Manipulation Capabilities, 2004–2020</h3>
+    <div class="chips"><span class="chip stamp-ratcliffe" title="Declassified by D/CIA Ratcliffe, 1 July 2026">RATCLIFFE · 1 JUL</span><span class="chip plain">6 pp</span><span class="chip plain">29 June 2026</span></div>
+    <p class="fname"><a class="open" href="https://drive.google.com/file/d/1aXXku1uhdJPKm3-_lA3GOYnRiuvM2DXu/view" target="_blank" rel="noopener">Open in Drive &rarr;</a> <code>CIA Note - Venezuela Machines Intel Memo_29JUNE2026_DECLASS_REDACTED.pdf</code></p>
+  </header>
+  <div class="doc-body">
+    <p class="lab">What it is</p>
+    <p>A 2026 CIA retrospective summarizing selected 2004–2020 reporting on Venezuelan interest in manipulating electronic voting systems. Finds that Venezuelan officials developed sustained interest and likely some capability in manipulating electronic voting systems including Smartmatic technology; that the 2006 IC assessment that Smartmatic's Venezuela ties posed a national security threat rested on solid intelligence about Venezuelan intent to influence US politics and evidence of manipulation of Venezuela's own systems; and that this led the US to force Smartmatic to divest its US operations in 2007. Cites April 2004 reporting that Chávez stated an objective of preventing the reelection of a sitting US president.</p>
+    <p class="lab">Why it matters</p>
+    <p>Reads as a setup for a Dominion/Smartmatic revival and then refuses to deliver. Its own summary states the intelligence did not definitively confirm that large-scale electronic fraud was successfully executed in specific Venezuelan elections, that CIA's baseline assessments maintained other factors better explained electoral outcomes, and that reporting on the more advanced techniques came from limited sourcing. Everything concrete concerns Venezuela's domestic elections and a US divestment order completed nineteen years ago. Carries a distinct third declassification stamp — Ratcliffe, 1 July — with Warrington's release approval added 10 July.</p>
+    
+  </div>
+</article>
+</section><section class="sec" id="sec2">
+  <div class="sec-head">
+    <span class="sec-num">02</span>
+    <h2>China's Acquisition and Exploitation of American Voter Data</h2>
+    <p class="sec-meta">23 documents &middot; <a href="https://drive.google.com/drive/folders/1QVYDNjBX8XIPdCjX7linIKlCPGzhhgJp" target="_blank" rel="noopener">Open folder in Drive &rarr;</a></p>
+    <p class="sec-note">The section carrying the speech's headline claim. Six documents are duplicates of Section 01 material. The operative finding — that the underlying data was publicly available and downloaded from commercial websites — appears in the government's own correction notice, filed here.</p>
+  </div>
+  <article class="doc" id="sec2-01">
+  <header class="doc-head">
+    <h3>WHTF Government Transparency — States Statement</h3>
+    <div class="chips"><span class="chip stamp-none" title="No declassification stamp — produced unclassified, or released without a declassification marking">NO STAMP</span><span class="chip plain">1 p</span><span class="chip plain">13 July 2026</span></div>
+    <p class="fname"><a class="open" href="https://drive.google.com/file/d/1E35OqkDgaaQYTuzNoNLsgRCnExhaTxVS/view" target="_blank" rel="noopener">Open in Drive &rarr;</a> <code>WHTF Government Transparency - States Statement FINAL.pdf</code></p>
+  </header>
+  <div class="doc-body">
+    <p class="lab">What it is</p>
+    <p>The White House Government Transparency Task Force's cover statement. Records that Trump created the task force within the Executive Office of the President in May 2026 to advise him, through the Counsel to the President, on documents that should be declassified or released 'to further his administration's priorities.' Announces the first disclosure, states that declassified intelligence reveals voter registration rolls from at least 18 states have been compromised by the PRC, and that additional records reveal more than 200 million voter records were compromised 'without state-specific affiliations.' Names sixteen jurisdictions: Alaska, Arkansas, Colorado, Connecticut, District of Columbia, Florida, Georgia, Iowa, Kansas, Maryland, Michigan, New York, North Carolina, Ohio, Oklahoma, Rhode Island.</p>
+    <p class="lab">Why it matters</p>
+    <p>The document that turns intelligence reporting into a political claim, and the one to check the rest of the section against. Three problems on a single page. It says 'at least 18 states' and names sixteen jurisdictions, one of which (DC) is not a state. It concedes the 200 million figure has no state-specific affiliation, which means the headline number cannot be tied to any named system. And the task force's stated purpose is not transparency in the abstract but furthering the administration's priorities — the charter is in the text. Ohio's presence on this list is not supported by the document it derives from (see 'US Voter Registration for 6 States'), which records that the Ohio download failed.</p>
+    
+  </div>
+</article><article class="doc doc-key" id="sec2-02">
+  <header class="doc-head">
+    <h3>US Voter Registration for 6 States — Network Defense Notice (Substantive Revision) <span class="key-mark" title="Load-bearing document">KEY</span></h3>
+    <div class="chips"><span class="chip stamp-none" title="No declassification stamp — produced unclassified, or released without a declassification marking">NO STAMP</span><span class="chip plain">6 pp</span><span class="chip plain">January 2022 activity; revision undated</span></div>
+    <p class="fname"><a class="open" href="https://drive.google.com/file/d/1iJKZw2NhHlqB0cRB3eQT7gV0hn6dAdfK/view" target="_blank" rel="noopener">Open in Drive &rarr;</a> <code>US Voter Registration  for 6 States - clean - declass marked_Redacted.pdf</code></p>
+  </header>
+  <div class="doc-body">
+    <p class="lab">What it is</p>
+    <p>A network defense notice, issued as a substantive revision of an earlier report. Records that publicly available US voter registration information for six states — Colorado, Connecticut, Florida, Michigan, Oklahoma and Rhode Island — was downloaded by a PRC computer network exploitation actor on 14 January 2022, from US commercial websites and via a US IP address. Records that an Ohio voter registration application was also of interest to the actor but failed to download. The revision notice states that Oklahoma was added and that 'the websites hosting the voter registration records are commercial websites, and that fact has been clarified in the report,' directing recipients to remove the original report from all manual and computer files.</p>
+    <p class="lab">Why it matters</p>
+    <p>The load-bearing document for the entire 'compromise' framing, and it demolishes it in its own correction notice. The government issued a formal revision for the specific purpose of clarifying that this was publicly available data downloaded from commercial websites — that is, voter files bought or scraped from data brokers, which anyone can do, and which is not a breach of anything. It also dates the activity to January 2022, not the 2020 cycle. Two hard facts for Ohio reporting: the state is on the White House's compromised list, and the only Ohio entry in the underlying intelligence is a failed download of a registration application. The 'at least 18 states' claim rests substantially on this six-state notice.</p>
+    
+  </div>
+</article><article class="doc doc-key" id="sec2-03">
+  <header class="doc-head">
+    <h3>200M Voter Records Compromised <span class="key-mark" title="Load-bearing document">KEY</span></h3>
+    <div class="chips"><span class="chip stamp-warr" title="Declassified and/or approved for public release by Counsel to the President Warrington, 10 July 2026">WARRINGTON · 10 JUL</span><span class="chip plain">24 pp</span><span class="chip plain">2019 source document</span><span class="chip warn" title="Image-only scan; text recovered by OCR is incomplete">OCR PARTIAL</span></div>
+    <p class="fname"><a class="open" href="https://drive.google.com/file/d/1kLCPDnbvvloTYUcF6swDgGvTEqwI398r/view" target="_blank" rel="noopener">Open in Drive &rarr;</a> <code>200M Voter Records Compromised - declass marked_Redacted.pdf</code></p>
+  </header>
+  <div class="doc-body">
+    <p class="lab">What it is</p>
+    <p>Heavily redacted report whose actual title is that the PRC 'possesses list of likely leaked, compromised data.' Describes a document held as of 2019 containing a list of entities and the data they yielded, primarily dated 2009–2018. A comparatively small portion — 97 entries — were explicitly identified as originating from US entities; the majority of the list consisted of data from other countries. The majority of entries were data sets of personally identifiable information, potentially indicating that bulk PII collection was the goal, and several were characterized as voter registration records. A table lists 'Unspecified U.S. voter data, 204,822,241 records (45 GB), 2016, includes voters' names, ages, phone numbers, addresses, etc.', plus named state databases of 11,746,069 records (2017), 7,893,248 records (2017) and 5,578,302 records (2017), the last with citizenship information.</p>
+    <p class="lab">Why it matters</p>
+    <p>The source of the '220 million voter files.' The document says 204.8 million. It dates the data to 2016 and the list to 2019 — the speech said the compromise began in the 2020 cycle. And its framing is an inventory of data already leaked or compromised and in circulation, not an account of a Chinese acquisition operation: possessing a list of breached data sets is not the same act as breaching them. The US material is a minority of a list that is mostly other countries. Redaction is heavy enough that OCR on several pages is unrecoverable; the table on pages 3–4 is the legible core and should be read directly.</p>
+    <p class="flag">OCR partial. Pages 2 and 5–24 are largely redacted or illegible; characterization above rests on pages 1, 3 and 4.</p>
+  </div>
+</article><article class="doc" id="sec2-04">
+  <header class="doc-head">
+    <h3>Summary — PART 1</h3>
+    <div class="chips"><span class="chip stamp-warr" title="Declassified and/or approved for public release by Counsel to the President Warrington, 10 July 2026">WARRINGTON · 10 JUL</span><span class="chip plain">1 p</span><span class="chip plain">undated</span></div>
+    <p class="fname"><a class="open" href="https://drive.google.com/file/d/1hTWx_jMsc-sBtJf2IZ8VhTzaQZl8bhqU/view" target="_blank" rel="noopener">Open in Drive &rarr;</a> <code>Summary - clean - declass marked PART 1.pdf</code></p>
+  </header>
+  <div class="doc-body">
+    <p class="lab">What it is</p>
+    <p>One-page summary asserting that ahead of the 2020 election China had extensive plans to use influence and cyber operations to sway opinion against the Trump administration, designed to exploit US societal fissures across several scenarios including US-China military conflict. Themes listed here: economic recession; encouraging violent demonstrations and looting to increase the appearance of social unrest; intensifying disapproval of the President and calling his ability to govern into question; undermining the legitimacy and public support of the President; ineffective USG COVID-19 response. States China had developed capabilities to project these themes into social media (TikTok, Facebook, Twitter, YouTube) and mainstream media through overt and hidden influencers, and that one option included gathering information on senior US officials.</p>
+    <p class="lab">Why it matters</p>
+    <p>Read the verbs. 'Had extensive plans,' 'had developed capabilities,' 'one of the options included' — this is a capabilities-and-options document, not a record of executed operations, and it contains no voter data at all despite being filed in the voter-data section. Parts 1, 2 and 3 share an identical opening paragraph and identical closing paragraph, differing only in the bulleted theme list, which suggests a single source product split into three releases rather than three findings.</p>
+    
+  </div>
+</article><article class="doc" id="sec2-05">
+  <header class="doc-head">
+    <h3>Summary — PART 2</h3>
+    <div class="chips"><span class="chip stamp-warr" title="Declassified and/or approved for public release by Counsel to the President Warrington, 10 July 2026">WARRINGTON · 10 JUL</span><span class="chip plain">1 p</span><span class="chip plain">undated</span></div>
+    <p class="fname"><a class="open" href="https://drive.google.com/file/d/1FcXYitulBfmRhlPD_pWm_qeX5nAtv7pI/view" target="_blank" rel="noopener">Open in Drive &rarr;</a> <code>Summary - clean - declass marked PART 2.pdf</code></p>
+  </header>
+  <div class="doc-body">
+    <p class="lab">What it is</p>
+    <p>Identical framing to Part 1. Themes listed here: racial tensions, including alleging that White people hate Black people, inciting demonstrations and marches as evidence of racial divides, increasing conflict between police and anti-racism activists; USG tensions with the US military; political party disagreements; Congress–Trump administration conflicts; women's rights; US South China Sea policies; alleged US war aspirations; international propaganda.</p>
+    <p class="lab">Why it matters</p>
+    <p>Same structural point as Part 1: planned themes and developed capabilities, not documented operations or effects. The 2020-era mainline assessments in this release address exactly this question and conclude Beijing did not deploy them to change the outcome.</p>
+    
+  </div>
+</article><article class="doc" id="sec2-06">
+  <header class="doc-head">
+    <h3>Summary — PART 3</h3>
+    <div class="chips"><span class="chip stamp-warr" title="Declassified and/or approved for public release by Counsel to the President Warrington, 10 July 2026">WARRINGTON · 10 JUL</span><span class="chip plain">1 p</span><span class="chip plain">undated</span></div>
+    <p class="fname"><a class="open" href="https://drive.google.com/file/d/171NP7lukSQPV6mZ9DbRcbt1ovJ2COJOD/view" target="_blank" rel="noopener">Open in Drive &rarr;</a> <code>Summary - clean - declass marked PART 3.pdf</code></p>
+  </header>
+  <div class="doc-body">
+    <p class="lab">What it is</p>
+    <p>Identical framing to Parts 1 and 2. Themes listed here: gun proliferation; immigration policies, including inciting migrant community dissatisfaction with the USG, instigating demonstrations against alleged USG human rights violations against immigrants, inflaming resentment between anti-immigrant and pro-immigrant communities, and instigating anti-immigration demonstrations.</p>
+    <p class="lab">Why it matters</p>
+    <p>Completes the set. Note that the three parts together describe a menu of influence themes spanning both directions of most US political arguments — which is what a capabilities catalog looks like, and is hard to reconcile with a claim of a targeted operation to defeat one candidate.</p>
+    
+  </div>
+</article><article class="doc" id="sec2-07">
+  <header class="doc-head">
+    <h3>18 States Memo</h3>
+    <div class="chips"><span class="chip stamp-none" title="No declassification stamp — produced unclassified, or released without a declassification marking">NO STAMP</span><span class="chip plain">6 pp</span><span class="chip plain">2019–2021 reporting</span><span class="chip warn" title="Image-only scan; text recovered by OCR is incomplete">OCR PARTIAL</span></div>
+    <p class="fname"><a class="open" href="https://drive.google.com/file/d/1jN1gDMPzoIiy6TnJzViEpvsr0orCNHgS/view" target="_blank" rel="noopener">Open in Drive &rarr;</a> <code>18 States Memo - clean - declass mark_Redacted.pdf</code></p>
+  </header>
+  <div class="doc-body">
+    <p class="lab">What it is</p>
+    <p>Reporting on PRC analysis of US voter registration information from 18 states, and plans to conduct US person matching and public opinion analysis. Describes voter registration records from the midterm elections containing personally identifiable information, to be used for mining PII on US citizens and as a resource to analyze, discover and identify US citizens; states the information would be used to conduct US general election analysis, and that the actor intended to continue obtaining state voter registration data.</p>
+    <p class="lab">Why it matters</p>
+    <p>The apparent source of the White House's '18 states' figure. What it describes is analysis of voter registration data for identity matching and opinion research — the ordinary use case for a commercial voter file. Redaction removes how the data was obtained, which is the only question that matters for the word 'compromised.' The companion six-state notice answers it: commercial websites.</p>
+    <p class="flag">OCR partial. Heavy redaction; acquisition method not recoverable from the released text.</p>
+  </div>
+</article><article class="doc" id="sec2-08">
+  <header class="doc-head">
+    <h3>PRC Analysis on US Voter Registration Information from Multiple States</h3>
+    <div class="chips"><span class="chip stamp-none" title="No declassification stamp — produced unclassified, or released without a declassification marking">NO STAMP</span><span class="chip plain">8 pp</span><span class="chip plain">2019</span><span class="chip warn" title="Image-only scan; text recovered by OCR is incomplete">OCR PARTIAL</span></div>
+    <p class="fname"><a class="open" href="https://drive.google.com/file/d/1pSbWWV-yAp7ViVKwzdQJHSGb1GOJZ2Pi/view" target="_blank" rel="noopener">Open in Drive &rarr;</a> <code>PRC Analsyis on US Voter Registration Information - clean - declass marked_Redacted.pdf</code></p>
+  </header>
+  <div class="doc-body">
+    <p class="lab">What it is</p>
+    <p>Near-duplicate of the 18 States Memo, covering PRC analysis of US voter registration information from multiple states to conduct identity matching and public opinion analysis, dated 2019. Same substance: records from the midterm elections, containing PII, to be used for mining PII on US citizens, analyzing and identifying US citizens, and conducting analysis on the US general election, with intent to continue obtaining state voter registration data.</p>
+    <p class="lab">Why it matters</p>
+    <p>Substantially overlapping text with the 18 States Memo, which inflates the apparent volume of the release. Same limitation: the acquisition method is redacted. Note the filename typo ('Analsyis') is the government's, not an upload artifact.</p>
+    <p class="flag">OCR partial.</p>
+  </div>
+</article><article class="doc" id="sec2-09">
+  <header class="doc-head">
+    <h3>PRC US Voter Data for Cities within Seven States, 2023</h3>
+    <div class="chips"><span class="chip stamp-none" title="No declassification stamp — produced unclassified, or released without a declassification marking">NO STAMP</span><span class="chip plain">4 pp</span><span class="chip plain">2023</span><span class="chip warn" title="Image-only scan; text recovered by OCR is incomplete">OCR PARTIAL</span></div>
+    <p class="fname"><a class="open" href="https://drive.google.com/file/d/1Fh21avRk1P3Yuf-HyrYK0-LmynxwaM3e/view" target="_blank" rel="noopener">Open in Drive &rarr;</a> <code>PRC US Voter Data 7 States 2023 - clean - declass marked_Redacted.pdf</code></p>
+  </header>
+  <div class="doc-body">
+    <p class="lab">What it is</p>
+    <p>Reporting that a PRC actor shared 2020 US voter registration data for cities within seven US states in 2023, and separately inquired whether a counterpart had data on Connecticut and Massachusetts.</p>
+    <p class="lab">Why it matters</p>
+    <p>2023 activity involving 2020-vintage data — three years after the election the speech is about. Nothing here bears on 2020 vote casting or counting.</p>
+    <p class="flag">OCR partial. State list beyond Connecticut and Massachusetts is redacted.</p>
+  </div>
+</article><article class="doc" id="sec2-10">
+  <header class="doc-head">
+    <h3>PRC Collection of US Consumer, Military and Voter Registration Databases</h3>
+    <div class="chips"><span class="chip stamp-none" title="No declassification stamp — produced unclassified, or released without a declassification marking">NO STAMP</span><span class="chip plain">2 pp</span><span class="chip plain">2020</span><span class="chip warn" title="Image-only scan; text recovered by OCR is incomplete">OCR PARTIAL</span></div>
+    <p class="fname"><a class="open" href="https://drive.google.com/file/d/1i58qrRkagszOXzkryga9Qej3WV9CZ-PE/view" target="_blank" rel="noopener">Open in Drive &rarr;</a> <code>PRC Collection of US VoterMilitaryData - clean - declass marked_Redacted.pdf</code></p>
+  </header>
+  <div class="doc-body">
+    <p class="lab">What it is</p>
+    <p>Reporting on PRC collection of US consumer, military and voter registration databases and capabilities to conduct identity verification checks of US persons. Lists a US consumer database, US voter registration databases from state governments including Georgia and Iowa, and a registered US military personnel information database, described as building a comprehensive PII baseline on US persons.</p>
+    <p class="lab">Why it matters</p>
+    <p>The clearest statement of what this material actually is: bulk PII aggregation for counterintelligence identity resolution — the OPM/Equifax/Marriott pattern — with voter files as one commercially available input among consumer and military data. A real and serious espionage concern, and an entirely different thing from election interference. Georgia and Iowa here are two of the sixteen the White House names.</p>
+    <p class="flag">OCR partial. Record counts redacted.</p>
+  </div>
+</article><article class="doc" id="sec2-11">
+  <header class="doc-head">
+    <h3>PRC Discussion of Targeting the 2024 US Elections</h3>
+    <div class="chips"><span class="chip stamp-none" title="No declassification stamp — produced unclassified, or released without a declassification marking">NO STAMP</span><span class="chip plain">6 pp</span><span class="chip plain">2023</span><span class="chip warn" title="Image-only scan; text recovered by OCR is incomplete">OCR PARTIAL</span></div>
+    <p class="fname"><a class="open" href="https://drive.google.com/file/d/1XfvYURisX6SC9-ch79L8B3Y3t39OggPK/view" target="_blank" rel="noopener">Open in Drive &rarr;</a> <code>PRC Target 2024 Election 2023 - clean - declass marked_Redacted.pdf</code></p>
+  </header>
+  <div class="doc-body">
+    <p class="lab">What it is</p>
+    <p>Reporting from 2023 on PRC discussion of targeting the 2024 US elections. Includes a formal correction notice. Key points section is almost entirely redacted in the released version.</p>
+    <p class="lab">Why it matters</p>
+    <p>Filed in a section about 2020 voter data and concerning 2024. Too heavily redacted to characterize further — I can confirm the subject and the presence of a correction notice and nothing else. Do not let the filename do analytical work the released text cannot support.</p>
+    <p class="flag">OCR partial. Substantively unreadable as released; subject line and correction notice only.</p>
+  </div>
+</article><article class="doc" id="sec2-12">
+  <header class="doc-head">
+    <h3>PRC US Presidential Election-Related Intelligence in 2020</h3>
+    <div class="chips"><span class="chip stamp-warr" title="Declassified and/or approved for public release by Counsel to the President Warrington, 10 July 2026">WARRINGTON · 10 JUL</span><span class="chip plain">4 pp</span><span class="chip plain">2020</span><span class="chip warn" title="Image-only scan; text recovered by OCR is incomplete">OCR PARTIAL</span></div>
+    <p class="fname"><a class="open" href="https://drive.google.com/file/d/11CUp4mnF1ZSBAEENOXQr8vHTK-8_PwQD/view" target="_blank" rel="noopener">Open in Drive &rarr;</a> <code>PRCUSP~1.PDF</code></p>
+  </header>
+  <div class="doc-body">
+    <p class="lab">What it is</p>
+    <p>Reporting that a PRC entity, seeking US presidential election-related intelligence, collected publicly available information from a US government website. The material collected is described as 2020 US presidential election infographics and products — maps and visualizations of each state's mail-in voting procedures, a mail-in voting policy change map, post-election and election-returns procedures — intended to provide election officials, interested parties and voters with information, and products setting out procedures to counter rumors and safeguard the 2020 election.</p>
+    <p class="lab">Why it matters</p>
+    <p>China downloaded CISA's public voter-education infographics. That is the finding. It is filed under 'Acquisition and Exploitation of American Voter Data' and stamped for release by the Counsel to the President. If you need one document to characterize the evidentiary standard of this section, it is this one.</p>
+    <p class="flag">Uploaded with a truncated 8.3 filename (PRCUSP~1.PDF). Byte size matches; content intact.</p>
+  </div>
+</article><article class="doc" id="sec2-13">
+  <header class="doc-head">
+    <h3>CIA Note: Sensitive PRC Reporting from 2018–2020</h3>
+    <div class="chips"><span class="chip stamp-warr" title="Declassified and/or approved for public release by Counsel to the President Warrington, 10 July 2026">WARRINGTON · 10 JUL</span><span class="chip plain">3 pp</span><span class="chip plain">2018–2020</span><span class="chip warn" title="Image-only scan; text recovered by OCR is incomplete">OCR PARTIAL</span></div>
+    <p class="fname"><a class="open" href="https://drive.google.com/file/d/1iBUZn5oi4J-Zya2eu15B7_FWP6FS3tQZ/view" target="_blank" rel="noopener">Open in Drive &rarr;</a> <code>Note - Sensitive PRC Reporting from 2018-2020 DECLASS_REDACTED.pdf</code></p>
+  </header>
+  <div class="doc-body">
+    <p class="lab">What it is</p>
+    <p>CIA note collecting portions of sensitive reporting disseminated between 2018 and 2020 on the PRC, explicitly stating it is not a comprehensive synopsis or summary of all reporting from that period. Includes a mid-2018 report that the PRC's ultimate goal with regard to US elections was for the US President not to be re-elected, and that China found the uncertainty of the administration unsettling.</p>
+    <p class="lab">Why it matters</p>
+    <p>Where Trump's 'as far back as mid-2018' line comes from. Preference is not interference, and the IC's mainline assessments in this same release say so directly: Beijing preferred Trump lose and chose not to act on it. Note the self-limiting scope note — this is a selection, not a survey, and the selector was the task force.</p>
+    <p class="flag">OCR partial.</p>
+  </div>
+</article><article class="doc" id="sec2-14">
+  <header class="doc-head">
+    <h3>President's Daily Brief, 25 June 2020</h3>
+    <div class="chips"><span class="chip stamp-warr" title="Declassified and/or approved for public release by Counsel to the President Warrington, 10 July 2026">WARRINGTON · 10 JUL</span><span class="chip plain">2 pp</span><span class="chip plain">25 June 2020</span><span class="chip warn" title="Image-only scan; text recovered by OCR is incomplete">OCR PARTIAL</span></div>
+    <p class="fname"><a class="open" href="https://drive.google.com/file/d/1wApL90CdHY9MTI5mLH-ZTIFv3Jg2iicJ/view" target="_blank" rel="noopener">Open in Drive &rarr;</a> <code>PDB 25JUN2020_DECLASS_REDACTED.pdf</code></p>
+  </header>
+  <div class="doc-body">
+    <p class="lab">What it is</p>
+    <p>PDB item titled 'Beijing Escalating Efforts To Shape US Policies on China.' Reports that Beijing told a White House official it held derogatory information on him in an effort to compel a restrained approach, with a threat to reveal it through social media, and assesses the threat is credible. Notes that lower-level Chinese officials have recommended collecting and using 'black materials' against perceived anti-China US officials since at least January 2019, and that this is the most detailed and authoritative such recommendation seen.</p>
+    <p class="lab">Why it matters</p>
+    <p>A genuine and serious counterintelligence item — attempted blackmail of a named-but-redacted White House official. It is about shaping China policy, not elections, and it is filed in the voter-data section. Heavy redaction; the substance above is most of what survives.</p>
+    <p class="flag">OCR partial. Two pages, majority redacted.</p>
+  </div>
+</article><article class="doc doc-key" id="sec2-15">
+  <header class="doc-head">
+    <h3>Email: NSA deliberately massaging elections PDB (20 Nov) <span class="key-mark" title="Load-bearing document">KEY</span></h3>
+    <div class="chips"><span class="chip stamp-trump" title="Declassified by President Trump, 3 July 2026">TRUMP · 3 JUL</span><span class="chip plain">8 pp</span><span class="chip plain">20 November 2020</span><span class="chip warn" title="Image-only scan; text recovered by OCR is incomplete">OCR PARTIAL</span></div>
+    <p class="fname"><a class="open" href="https://drive.google.com/file/d/1jZoXZJKdXm1ivgG7bxkZFpvxkKEF-6Lr/view" target="_blank" rel="noopener">Open in Drive &rarr;</a> <code>EMAIL_NSA.MassagedPDB_20NOV2020_DECLASS_REDACT.pdf</code></p>
+  </header>
+  <div class="doc-body">
+    <p class="lab">What it is</p>
+    <p>Email chain within ODNI regarding the 45-day ICA China section drafting team. A sender states that there is pending reporting making clear China 'has been caught conducting election influence,' at least as it was described to them, and points to a claim upthread that NSA 'deliberately massaged our one pending PDB to avoid any direct links to the election.' The sender frames this as a near-term issue and as a good example — 'far from the only one' — of what they have been raising since the summer: that the IC is deliberately avoiding mentioning a connection to elections for non-substantive reasons. A recipient responds that they see an opportunity to prevent an analytic objectivity mistake and asks who the decision maker would be. Recipients include the Executive Secretary of the National Intelligence Analysis Board and the IC Analytic Ombudsman.</p>
+    <p class="lab">Why it matters</p>
+    <p>The strongest document in the release for the administration's second claim — that officials suppressed China findings — and it should be reported as such. A contemporaneous internal allegation, routed to the Analytic Ombudsman, that analysis was being steered away from elections for non-substantive reasons. Handle the sourcing carefully: this is one official characterizing a second official's characterization of NSA's drafting, the underlying PDB is not in the release, and the sender is aligned with the minority view. The quoted phrase 'deliberately massaged' is being reported, not observed. Real, but thinner than the speech implied, and the companion 23 November chain shows the recipient unconvinced.</p>
+    <p class="flag">OCR partial. Redaction removes most names and the underlying reporting.</p>
+  </div>
+</article><article class="doc" id="sec2-16">
+  <header class="doc-head">
+    <h3>Email: NSA deliberately messaging elections PDB (23 Nov)</h3>
+    <div class="chips"><span class="chip stamp-trump" title="Declassified by President Trump, 3 July 2026">TRUMP · 3 JUL</span><span class="chip plain">6 pp</span><span class="chip plain">23 November 2020</span><span class="chip warn" title="Image-only scan; text recovered by OCR is incomplete">OCR PARTIAL</span></div>
+    <p class="fname"><a class="open" href="https://drive.google.com/file/d/1Zye9qHUGSqfe6U7rbMDJeLqLmsDVzSS2/view" target="_blank" rel="noopener">Open in Drive &rarr;</a> <code>EMAIL_NSA.MassagedPDB_23NOV2020_DECLASS_REDACT.pdf</code></p>
+  </header>
+  <div class="doc-body">
+    <p class="lab">What it is</p>
+    <p>Continuation of the same matter three days later. A senior official separates two issues: first, the PDB that has apparently been worded away from elections — they have not seen the draft, but the characterization is familiar from a few weeks earlier, and they would be concerned as to why analysis is being 'deliberately massaged' away from elections; second, a broader NSA effort to consolidate reporting for the 45-day report. Another participant writes that they are not sure what to make of it, and asks why, if the item is off, the NSA officer says 'ok'. The underlying NSA email, dated 20 November, reads in relevant part: 'OK, thx. Regarding cross-posting into various [redacted] or downgrading to [redacted] for the 45 day piece, if you make sure there are [redacted] versions, we're good.'</p>
+    <p class="lab">Why it matters</p>
+    <p>The counterweight to the 20 November chain, and the reason to be careful with it. The NSA email actually in the record is a routine note about cross-posting and downgrading for the 45-day piece — it says nothing about avoiding elections. Senior recipients are visibly unsure the allegation holds up, and one asks why the NSA officer would say 'ok' if the item were being killed. A suppression story needs the PDB draft itself, which is not in this release.</p>
+    <p class="flag">OCR partial.</p>
+  </div>
+</article><article class="doc" id="sec2-17">
+  <header class="doc-head">
+    <h3>Email: For IC coord by 7 Oct — NIC alternative analysis on China/election</h3>
+    <div class="chips"><span class="chip stamp-warr" title="Declassified and/or approved for public release by Counsel to the President Warrington, 10 July 2026">WARRINGTON · 10 JUL</span><span class="chip plain">8 pp</span><span class="chip plain">7 October 2020</span><span class="chip warn" title="Image-only scan; text recovered by OCR is incomplete">OCR PARTIAL</span></div>
+    <p class="fname"><a class="open" href="https://drive.google.com/file/d/1YLWSyxO1kFqbAtrdMysk81rGLfeIdBfu/view" target="_blank" rel="noopener">Open in Drive &rarr;</a> <code>EMAIL_RE For IC coord by Oct 7 2020  7OCT2020 DECLASS REDACTED.pdf</code></p>
+  </header>
+  <div class="doc-body">
+    <p class="lab">What it is</p>
+    <p>Coordination chain around the draft alternative analysis, nine days before the minority view published. A CI subject-matter expert in CIA's East Asia division writes that the draft 'speaks exactly to what has been on my mind but what was left out of the mainline IC assessment' and that it looks very good. The Director of Election Threat Analysis forwards it. A recipient responds that an NSA senior joining is 'a big deal' because he is 'one of the few seniors that remained analytically focused.'</p>
+    <p class="lab">Why it matters</p>
+    <p>Useful for the sociology rather than the substance: it shows the dissent being assembled and its authors recruiting supporters, with a working assumption that colleagues who disagreed were not analytically focused. Corroborates that the alternative analysis was circulated for comment — consistent with the memo's own scope note — while remaining un-coordinated.</p>
+    <p class="flag">OCR partial.</p>
+  </div>
+</article><article class="doc" id="sec2-18">
+  <header class="doc-head">
+    <h3>Email: Please coord by COB 9/1 — four-country election security graphic</h3>
+    <div class="chips"><span class="chip stamp-trump" title="Declassified by President Trump, 3 July 2026">TRUMP · 3 JUL</span><span class="chip plain">24 pp</span><span class="chip plain">3 September 2020</span><span class="chip warn" title="Image-only scan; text recovered by OCR is incomplete">OCR PARTIAL</span></div>
+    <p class="fname"><a class="open" href="https://drive.google.com/file/d/1tmFJmHbXofiQb0X83fcrn2qSbWfHmjRw/view" target="_blank" rel="noopener">Open in Drive &rarr;</a> <code>EMAIL_~3.PDF</code></p>
+  </header>
+  <div class="doc-body">
+    <p class="lab">What it is</p>
+    <p>Coordination chain on a four-country election security graphic. The National Intelligence Officer for Cyber writes that he is concerned about politics seeping into the product, that there is no reason the IC cannot state its confidence level and that adversaries have a preference, and that while he does not disagree the consensus view is most likely, he strongly disagrees the IC can be so confident about it; he adds that he is troubled by CIA's comments. Another participant asks whether the IC is 'basically saying we should self-censor our assessment on preference because it could be misused,' notes that the actors do have a preference and that the IC assesses they think acting on it is probably not worth the risk, and says that if the IC cannot communicate its thinking clearly, 'maybe we should just quit and go home.'</p>
+    <p class="lab">Why it matters</p>
+    <p>The dissenters' complaint in its most sympathetic form — an argument for stating preference and confidence plainly rather than softening findings against misuse. Note what it concedes in passing: the participant arguing hardest against self-censorship states the assessment as adversaries having a preference but judging action not worth the risk. That is the mainline view, from the dissent's side of the table.</p>
+    <p class="flag">OCR partial. 24 pages, largely signature blocks and repeated classification headers.</p><p class="flag">Uploaded with a truncated 8.3 filename (EMAIL_~3.PDF). In the White House download this file sat at the section root rather than in the numbered subfolder.</p>
+  </div>
+</article><article class="doc" id="sec2-19">
+  <header class="doc-head">
+    <h3>FBI Albany IIR provided to Chairman Grassley</h3>
+    <div class="chips"><span class="chip stamp-none" title="No declassification stamp — produced unclassified, or released without a declassification marking">NO STAMP</span><span class="chip plain">6 pp</span><span class="chip plain">25 September 2020</span><span class="chip warn" title="Image-only scan; text recovered by OCR is incomplete">OCR PARTIAL</span></div>
+    <p class="fname"><a class="open" href="https://drive.google.com/file/d/1TCH2w7WHeE8Jsglz4iWMkfg60IJWgh9h/view" target="_blank" rel="noopener">Open in Drive &rarr;</a> <code>FBI_ALBANY_IIR_PROVIDED_TO_CHAIRMAN GRASSLEY .pdf</code></p>
+  </header>
+  <div class="doc-body">
+    <p class="lab">What it is</p>
+    <p>The FBI Albany Intelligence Information Report itself, date-time group 25 September 2020, sent from Director FBI to all field offices and a very long external distribution including CIA, NSA, DIA, State, DHS, DOJ, Treasury and the combatant commands. Bates-stamped FBI-SJC-IIR-000001, indicating production to the Senate Judiciary Committee.</p>
+    <p class="lab">Why it matters</p>
+    <p>The primary document in the recalled-IIR controversy, released with its distribution list intact — which is itself the point, since the recall's significance turns on how widely it had gone before being pulled. The Bates prefix shows this reached Grassley's committee through congressional oversight, so parts of this story are already on the record and datable.</p>
+    <p class="flag">OCR partial. The released pages are dominated by the routing header; substantive body text is largely redacted.</p>
+  </div>
+</article><article class="doc doc-key" id="sec2-20">
+  <header class="doc-head">
+    <h3>Tasking 3: Albany Briefing Handout <span class="key-mark" title="Load-bearing document">KEY</span></h3>
+    <div class="chips"><span class="chip stamp-warr" title="Declassified and/or approved for public release by Counsel to the President Warrington, 10 July 2026">WARRINGTON · 10 JUL</span><span class="chip plain">35 pp</span><span class="chip plain">July 2025 review</span><span class="chip warn" title="Image-only scan; text recovered by OCR is incomplete">OCR PARTIAL</span></div>
+    <p class="fname"><a class="open" href="https://drive.google.com/file/d/1qhlH1k7mRWDAEmcb95kBta7dcrG-NFWz/view" target="_blank" rel="noopener">Open in Drive &rarr;</a> <code>Tasking_3_AlbanyBriefingHandout_297E_HQ_A4095996_NotSerialized-JET-R RELEASE MARKED.pdf</code></p>
+  </header>
+  <div class="doc-body">
+    <p class="lab">What it is</p>
+    <p>Briefing handout from an FBI Inspection Division Intelligence Reporting Strategic Review conducted 7–20 July 2025. Tab structure covers electronic media reviewed, people identified for interview, a relevant personnel link chart, IIR dissemination flow charts and a recall decision tree; dissemination and recall flow charts for Albany IIR #1; pertinent electronic communications from 25 September 2020 and from 26 September to 8 October 2020; a log of direct electronic communication between DAD Floris and DAD Ugoretz; the recalled IIR; emails from Albany discussing the IIR and Director Wray's testimony; a flow chart for Albany IIR #2; an FITF lead to FBI Chicago; and IIR recall statistics from 2019 to June 2025. Review metrics: 58,220 total items across 103 accounts, comprising 21,456 FBINET emails, 24,289 Skype messages, 10,351 UNET emails and 692 text messages.</p>
+    <p class="lab">Why it matters</p>
+    <p>The most substantial document in the section by volume and the most promising for further reporting, because it is an index to a body of evidence rather than the evidence itself. Two things worth pulling on: the review logged direct communications between Floris and Ugoretz — the same two FBI counterintelligence officials who appear in the minority-view email — and it compiled IIR recall statistics from 2019 to 2025, which would establish whether the Albany recall was anomalous or routine. Neither the log nor the statistics are in this release. That base rate is the whole ballgame for the suppression claim, and the FBI has already calculated it.</p>
+    <p class="flag">OCR partial. 35 pages, heavily redacted; tab list and review metrics are the recoverable content.</p>
+  </div>
+</article><article class="doc" id="sec2-21">
+  <header class="doc-head">
+    <h3>NICA: Foreign Threats to 2020 US Federal Elections (duplicate)</h3>
+    <div class="chips"><span class="chip stamp-trump" title="Declassified by President Trump, 3 July 2026">TRUMP · 3 JUL</span><span class="chip plain">8 pp</span><span class="chip plain">19 August 2020</span><span class="chip plain">DUPLICATE</span></div>
+    <p class="fname"><a class="open" href="https://drive.google.com/file/d/1dE1DPgpg9qsA52ZXHkwkgtXPt0VYuNRk/view" target="_blank" rel="noopener">Open in Drive &rarr;</a> <code>NICA Foreign Threats To 2020 US Election_19AUG2020 DECLASS_REDACTED.pdf</code></p>
+  </header>
+  <div class="doc-body">
+    <p class="lab">What it is</p>
+    <p>Byte-identical duplicate of the Section 01 copy. See that entry for the substance.</p>
+    <p class="lab">Why it matters</p>
+    <p>Filing duplication. Counts toward the release's apparent volume without adding a document.</p>
+    
+  </div>
+</article><article class="doc" id="sec2-22">
+  <header class="doc-head">
+    <h3>CIA WIRe: China — Cyber Activities Probably Prelude to Election Espionage (duplicate)</h3>
+    <div class="chips"><span class="chip stamp-warr" title="Declassified and/or approved for public release by Counsel to the President Warrington, 10 July 2026">WARRINGTON · 10 JUL</span><span class="chip plain">2 pp</span><span class="chip plain">Summer 2020</span><span class="chip plain">DUPLICATE</span></div>
+    <p class="fname"><a class="open" href="https://drive.google.com/file/d/1HlhqFRFCAyJd3avnZfW3DKHjFJ-L_tfe/view" target="_blank" rel="noopener">Open in Drive &rarr;</a> <code>CIA Wire Memo Summer 2020 DECLASS_REDACTED.pdf</code></p>
+  </header>
+  <div class="doc-body">
+    <p class="lab">What it is</p>
+    <p>Byte-identical duplicate of the Section 01 copy. See that entry for the substance.</p>
+    <p class="lab">Why it matters</p>
+    <p>Filing duplication.</p>
+    
+  </div>
+</article><article class="doc" id="sec2-23">
+  <header class="doc-head">
+    <h3>Email: Everyone's favorite topic (duplicate)</h3>
+    <div class="chips"><span class="chip stamp-trump" title="Declassified by President Trump, 3 July 2026">TRUMP · 3 JUL</span><span class="chip plain">1 p</span><span class="chip plain">23 December 2021</span><span class="chip plain">DUPLICATE</span></div>
+    <p class="fname"><a class="open" href="https://drive.google.com/file/d/1XkD4bthB-R9vnLeWAD7jdkCcnXl8XzOq/view" target="_blank" rel="noopener">Open in Drive &rarr;</a> <code>EMAIL_Everyone's favorite topic 23DEC2021 - DECLASS_REDACTED.pdf</code></p>
+  </header>
+  <div class="doc-body">
+    <p class="lab">What it is</p>
+    <p>Byte-identical duplicate of the Section 01 copy. See that entry for the substance.</p>
+    <p class="lab">Why it matters</p>
+    <p>Filing duplication.</p>
+    
+  </div>
+</article>
+</section><section class="sec" id="sec3">
+  <div class="sec-head">
+    <span class="sec-num">03</span>
+    <h2>Michigan Voter-Registration Investigation</h2>
+    <p class="sec-meta">25 documents &middot; <a href="https://drive.google.com/drive/folders/15o-4Rx5Bv4qg82V4hBDiQThhE3Do2VLv" target="_blank" rel="noopener">Open folder in Drive &rarr;</a></p>
+    <p class="sec-note">The GBI Strategies canvassing matter, in full case order below rather than filename order. The underlying conduct is fraudulent voter registration applications submitted by paid canvassers — caught by a city clerk before processing, referred by that clerk, and investigated for four years. No fraudulent votes appear anywhere in the file. Every document here is Warrington-track.</p>
+  </div>
+  <article class="doc doc-key" id="sec3-01">
+  <header class="doc-head">
+    <h3>Original Muskegon MSP Referral <span class="key-mark" title="Load-bearing document">KEY</span></h3>
+    <div class="chips"><span class="chip stamp-warr" title="Declassified and/or approved for public release by Counsel to the President Warrington, 10 July 2026">WARRINGTON · 10 JUL</span><span class="chip plain">4 pp</span><span class="chip plain">29 October 2020</span></div>
+    <p class="fname"><a class="open" href="https://drive.google.com/file/d/1c8eanlGiSyzFSYYN52dDcV_MtoHL-S7i/view" target="_blank" rel="noopener">Open in Drive &rarr;</a> <code>FBIMichigan Orginal Muskego MSP Referral RELEASE MARKED.pdf</code></p>
+  </header>
+  <div class="doc-body">
+    <p class="lab">What it is</p>
+    <p>FBI Detroit electronic communication, case ID 56-DE-3249380 (Michigan Election Crimes; Type Assessment, begun 10 March 2020), summarizing allegations of fraudulent voter registrations submitted to the Muskegon City Clerk's Office. Records that Detroit Field Office was informed the Michigan State Police, Michigan Attorney General and Muskegon Police Department were investigating, and that the matter was referred to law enforcement by the Clerk's Office itself. From about 5 October 2020, the Clerk's Office received six packages by US Mail containing voter registration applications, and determined some were fraudulent based on non-existent addresses, invalid telephone numbers, signatures not matching Secretary of State or DMV records, and many applications appearing to share the same handwriting.</p>
+    <p class="lab">Why it matters</p>
+    <p>The origin document, and it refutes the section's premise on page one. The fraudulent applications were detected by a local election official using routine verification, and referred by her to police. This is the system working exactly as designed, documented by the FBI, and released by the White House as evidence that it does not.</p>
+    
+  </div>
+</article><article class="doc" id="sec3-02">
+  <header class="doc-head">
+    <h3>Opening EC</h3>
+    <div class="chips"><span class="chip stamp-warr" title="Declassified and/or approved for public release by Counsel to the President Warrington, 10 July 2026">WARRINGTON · 10 JUL</span><span class="chip plain">6 pp</span><span class="chip plain">16 March 2021</span><span class="chip warn" title="Image-only scan; text recovered by OCR is incomplete">OCR PARTIAL</span></div>
+    <p class="fname"><a class="open" href="https://drive.google.com/file/d/109rpEV1KPnytZmu0SMKXnBqGmATYTTJA/view" target="_blank" rel="noopener">Open in Drive &rarr;</a> <code>0000001 - RELEASE MARKED.pdf</code></p>
+  </header>
+  <div class="doc-body">
+    <p class="lab">What it is</p>
+    <p>FBI Detroit opening electronic communication for the full field investigation, filed under STATE OF MICHIGAN; CDPO – ELECTION LAWS, marked Sensitive Investigative Matter.</p>
+    <p class="lab">Why it matters</p>
+    <p>Administrative but load-bearing for chronology: it dates the formal opening to 16 March 2021, five days after PIN's authorization. Establishes that the matter was opened, not buried.</p>
+    <p class="flag">OCR partial.</p>
+  </div>
+</article><article class="doc doc-key" id="sec3-03">
+  <header class="doc-head">
+    <h3>Election Consult re Voter Registrations (W.D. Mich.) <span class="key-mark" title="Load-bearing document">KEY</span></h3>
+    <div class="chips"><span class="chip stamp-warr" title="Declassified and/or approved for public release by Counsel to the President Warrington, 10 July 2026">WARRINGTON · 10 JUL</span><span class="chip plain">2 pp</span><span class="chip plain">2 February 2023</span></div>
+    <p class="fname"><a class="open" href="https://drive.google.com/file/d/1ZKTLOSanWmPrxlBSHitDFnYBljYkuPvk/view" target="_blank" rel="noopener">Open in Drive &rarr;</a> <code>FBIMichigan Fraudulent Request Memo2 RELEASE MARKED.pdf</code></p>
+  </header>
+  <div class="doc-body">
+    <p class="lab">What it is</p>
+    <p>Email from DOJ's Public Integrity Section concurring in a full grand jury investigation into the alleged voter registration fraud matter. PIN concurs in investigating only those applications where (1) the purported applicant does not exist or appears fabricated — 'unable to locate' with incorrect associated information — and (2) signatures are the same or substantially similar to signatures on other applications, suggesting one person signed multiple applications. The concurrence expressly does not extend to applications featuring names of actual persons with unique signatures. Asks to be consulted before charges or public statements.</p>
+    <p class="lab">Why it matters</p>
+    <p>The document the release's framing depends on being misread. PIN authorized the investigation and drew a scope limit around fabricated applicants and duplicated signatures — that is, around the conduct that is actually a federal crime, and away from real people who signed their own forms. That is a prosecutor narrowing a case to its provable core, not obstruction. Anyone arguing suppression has to explain this email.</p>
+    
+  </div>
+</article><article class="doc doc-key" id="sec3-04">
+  <header class="doc-head">
+    <h3>Database Checks Spreadsheet EC — 91 of 107 <span class="key-mark" title="Load-bearing document">KEY</span></h3>
+    <div class="chips"><span class="chip stamp-warr" title="Declassified and/or approved for public release by Counsel to the President Warrington, 10 July 2026">WARRINGTON · 10 JUL</span><span class="chip plain">1 p</span><span class="chip plain">19 May 2023</span></div>
+    <p class="fname"><a class="open" href="https://drive.google.com/file/d/198yFI-dK4Xi2bbXPC18NtMHWYMkZfZ_D/view" target="_blank" rel="noopener">Open in Drive &rarr;</a> <code>FBIMichigan Fraudulent Registration Applications 91 of 107 RELEASE MARKED.pdf</code></p>
+  </header>
+  <div class="doc-body">
+    <p class="lab">What it is</p>
+    <p>FBI Detroit EC, case 56D-DE-3407960, recording database searches on 107 voter registration applications from evidence item 1B1 (a box of voter registration forms, Muskegon PD property receipt 94333), run to identify applications with potentially fraudulent signatures or non-existent individuals. Results: 91 individuals returned no results in database checks; 16 were confirmed to be existing people, of whom only four had signatures on file matching the signatures on the associated application.</p>
+    <p class="lab">Why it matters</p>
+    <p>The scale of the case, stated numerically by the FBI: 107 applications, of which 91 could not be matched to a real person. Not votes — applications, seized as evidence from the police department that received them, none of which produced a ballot. This is the number to put next to the 220 million. It is also the answer to the filename 'Widespread Fake Registrations': the universe is 107 forms in one Michigan city.</p>
+    
+  </div>
+</article><article class="doc" id="sec3-05">
+  <header class="doc-head">
+    <h3>Voter Fraud Spreadsheet</h3>
+    <div class="chips"><span class="chip stamp-warr" title="Declassified and/or approved for public release by Counsel to the President Warrington, 10 July 2026">WARRINGTON · 10 JUL</span><span class="chip plain">1 p</span><span class="chip plain">28 April 2023</span></div>
+    <p class="fname"><a class="open" href="https://drive.google.com/file/d/1E_BsV4UBxb2Y3fA7CfScLz8-bUza6gOw/view" target="_blank" rel="noopener">Open in Drive &rarr;</a> <code>Voter Fraud Spreadsheet - RELEASE MARKED.pdf</code></p>
+  </header>
+  <div class="doc-body">
+    <p class="lab">What it is</p>
+    <p>Email from FBI Detroit's Grand Rapids resident agency transmitting the spreadsheet 'Person Checks_2023.xlsx' detailing information and outcomes of person searches, with a second tab named 'Stats' providing percentage breakdowns.</p>
+    <p class="lab">Why it matters</p>
+    <p>A transmittal email. The spreadsheet itself — the actual data, with the percentage breakdowns — is not in the release. Given that the whole matter turns on match rates across 107 applications, the withheld attachment is more informative than the email announcing it. Worth a FOIA.</p>
+    
+  </div>
+</article><article class="doc" id="sec3-06">
+  <header class="doc-head">
+    <h3>Searches EC (1)</h3>
+    <div class="chips"><span class="chip stamp-warr" title="Declassified and/or approved for public release by Counsel to the President Warrington, 10 July 2026">WARRINGTON · 10 JUL</span><span class="chip plain">1 p</span><span class="chip plain">31 March 2022</span></div>
+    <p class="fname"><a class="open" href="https://drive.google.com/file/d/1fGaFLcc1DgTei5AKjfSg1_Ln8TRFsMdt/view" target="_blank" rel="noopener">Open in Drive &rarr;</a> <code>FBIMichigan Fake Voter Memo 1 RELEASE MARKED.pdf</code></p>
+  </header>
+  <div class="doc-body">
+    <p class="lab">What it is</p>
+    <p>FBI Detroit EC recording searches conducted on 22 March 2022 in Accurint, Clear and other commercial databases against a named individual from the applications. Filed under STATE OF MICHIGAN; CDPO – ELECTION LAWS, Sensitive Investigative Matter.</p>
+    <p class="lab">Why it matters</p>
+    <p>Routine investigative record. The filename says 'Fake Voter'; the document is a records check on a name from a registration form. Three of these are in the release, which is worth noting when counting documents.</p>
+    
+  </div>
+</article><article class="doc" id="sec3-07">
+  <header class="doc-head">
+    <h3>Searches EC (2)</h3>
+    <div class="chips"><span class="chip stamp-warr" title="Declassified and/or approved for public release by Counsel to the President Warrington, 10 July 2026">WARRINGTON · 10 JUL</span><span class="chip plain">1 p</span><span class="chip plain">31 March 2022</span></div>
+    <p class="fname"><a class="open" href="https://drive.google.com/file/d/1vny7ZuTT9vsrIDhOeHtwog9Rnq3f6vFz/view" target="_blank" rel="noopener">Open in Drive &rarr;</a> <code>FBIMichigan Fake Voter Memo 2 RELEASE MARKED.pdf</code></p>
+  </header>
+  <div class="doc-body">
+    <p class="lab">What it is</p>
+    <p>Companion EC to the above, same date, same database searches against a different named individual.</p>
+    <p class="lab">Why it matters</p>
+    <p>Routine investigative record. Near-identical to Searches EC (1) apart from the subject name.</p>
+    
+  </div>
+</article><article class="doc" id="sec3-08">
+  <header class="doc-head">
+    <h3>Searches EC (3)</h3>
+    <div class="chips"><span class="chip stamp-warr" title="Declassified and/or approved for public release by Counsel to the President Warrington, 10 July 2026">WARRINGTON · 10 JUL</span><span class="chip plain">1 p</span><span class="chip plain">12 May 2022</span></div>
+    <p class="fname"><a class="open" href="https://drive.google.com/file/d/1SzVgEbJQcY1zomBHhxJusOm8bqvWIOIr/view" target="_blank" rel="noopener">Open in Drive &rarr;</a> <code>FBIMichigan Fake Voter 3 Memo RELEASE MARKED.pdf</code></p>
+  </header>
+  <div class="doc-body">
+    <p class="lab">What it is</p>
+    <p>Third EC in the series, recording searches conducted 5 May 2022 in Clear, Accurint and through the Michigan Secretary of State.</p>
+    <p class="lab">Why it matters</p>
+    <p>Routine investigative record. Notable only in that the check ran through the Secretary of State's own systems — the state cooperating with the federal investigation the release implies was being stonewalled.</p>
+    
+  </div>
+</article><article class="doc" id="sec3-09">
+  <header class="doc-head">
+    <h3>Guardian Complaint — Southfield, MI</h3>
+    <div class="chips"><span class="chip stamp-warr" title="Declassified and/or approved for public release by Counsel to the President Warrington, 10 July 2026">WARRINGTON · 10 JUL</span><span class="chip plain">2 pp</span><span class="chip plain">complaint 8 December 2020; import 5 October 2021</span><span class="chip warn" title="Image-only scan; text recovered by OCR is incomplete">OCR PARTIAL</span></div>
+    <p class="fname"><a class="open" href="https://drive.google.com/file/d/119v9PK7w8ZN0ZfM3TU7NYSYCK0YN0v2R/view" target="_blank" rel="noopener">Open in Drive &rarr;</a> <code>FBIMichigan Voter Confirms She Did Not Register But Got Ballot RELEASE MARKED.pdf</code></p>
+  </header>
+  <div class="doc-body">
+    <p class="lab">What it is</p>
+    <p>FBI Guardian complaint import form, filed to the zero file for election law matters, recording a call to the FBI on 8 December 2020 reporting possible election fraud in Southfield, Michigan. The complainant describes an unknown subject wearing a Biden shirt coming to her door on 3 November 2020.</p>
+    <p class="lab">Why it matters</p>
+    <p>A single unverified public tip, filed to a zero file — the FBI's holding bin for matters not opened as investigations. The filename asserts a voter confirmed she did not register but received a ballot; the released text does not establish that, and the disposition is not in the release. This is the weakest document in the section and the one most likely to be quoted as though it were a finding.</p>
+    <p class="flag">OCR partial. Do not characterize beyond the complaint's existence and filing status without the underlying Guardian record.</p>
+  </div>
+</article><article class="doc" id="sec3-10">
+  <header class="doc-head">
+    <h3>FD-302: Widespread Fake Registrations</h3>
+    <div class="chips"><span class="chip stamp-warr" title="Declassified and/or approved for public release by Counsel to the President Warrington, 10 July 2026">WARRINGTON · 10 JUL</span><span class="chip plain">3 pp</span><span class="chip plain">13 December 2023</span><span class="chip warn" title="Image-only scan; text recovered by OCR is incomplete">OCR PARTIAL</span></div>
+    <p class="fname"><a class="open" href="https://drive.google.com/file/d/1I2O84wbwN0GEpecKc-3HbVGJmOkrCzP9/view" target="_blank" rel="noopener">Open in Drive &rarr;</a> <code>FBIMichigan Witness Interview Widespread Fake Registrations RELEASE MARKED.pdf</code></p>
+  </header>
+  <div class="doc-body">
+    <p class="lab">What it is</p>
+    <p>FD-302 of a canvasser interviewed in December 2023. In fall 2020 she was approached outside an office next door — previously an eyeglass store — asked if she wanted a job, applied to register people to vote, and was hired the following day. Describes the office as run by a tall thin white male.</p>
+    <p class="lab">Why it matters</p>
+    <p>One of eight canvasser interviews conducted after PIN lifted the election-sensitivity hold. The substance is a description of getting hired at a storefront operation. Names and the operative allegations are redacted; the filename is doing considerably more work than the released text supports.</p>
+    <p class="flag">OCR partial. Heavily redacted.</p>
+  </div>
+</article><article class="doc" id="sec3-11">
+  <header class="doc-head">
+    <h3>FD-302: Gift Cards / Suppress Trump</h3>
+    <div class="chips"><span class="chip stamp-warr" title="Declassified and/or approved for public release by Counsel to the President Warrington, 10 July 2026">WARRINGTON · 10 JUL</span><span class="chip plain">3 pp</span><span class="chip plain">interview 7 July 2025; entry 10 July 2025</span><span class="chip warn" title="Image-only scan; text recovered by OCR is incomplete">OCR PARTIAL</span></div>
+    <p class="fname"><a class="open" href="https://drive.google.com/file/d/1thnbxFiBQi_KMeZGkX5n4NU5b-ukFC-W/view" target="_blank" rel="noopener">Open in Drive &rarr;</a> <code>FBIMichigan Witness Interview Memo Gift Cards Suppress Trump RELEASE MARKED.pdf</code></p>
+  </header>
+  <div class="doc-body">
+    <p class="lab">What it is</p>
+    <p>FD-302 of an interview conducted at the subject's residence on 7 July 2025 by FBI special agents. The recoverable content is biographical: the subject works as a certified nursing assistant and as a medical transportation driver, with her shift patterns recorded.</p>
+    <p class="lab">Why it matters</p>
+    <p>The most inflammatory filename in the release and the least supported by its own text. Nothing about gift cards or suppressing Trump survives in the released portion — the substance is redacted. Note the date: July 2025, nearly two years after the canvasser interviews and squarely inside the period the task force was assembling this release. Worth asking who directed a fresh 302 in July 2025 on a matter DOJ declined in 2021, and whether the interview series that produced it is complete in this file.</p>
+    <p class="flag">OCR partial. Allegations in the filename are not verifiable from the released text. Do not repeat the filename as a finding.</p>
+  </div>
+</article><article class="doc" id="sec3-12">
+  <header class="doc-head">
+    <h3>FD-302: Paid By Registration, Others Falsified</h3>
+    <div class="chips"><span class="chip stamp-warr" title="Declassified and/or approved for public release by Counsel to the President Warrington, 10 July 2026">WARRINGTON · 10 JUL</span><span class="chip plain">2 pp</span><span class="chip plain">15 December 2023</span><span class="chip warn" title="Image-only scan; text recovered by OCR is incomplete">OCR PARTIAL</span></div>
+    <p class="fname"><a class="open" href="https://drive.google.com/file/d/10DDbjQNWCiU3TSIZfn-VsYMeMrHFMgem/view" target="_blank" rel="noopener">Open in Drive &rarr;</a> <code>FBIMichigan Witness Interview Memo Paid By Registration Others Falsified RELEASE MARKED.pdf</code></p>
+  </header>
+  <div class="doc-body">
+    <p class="lab">What it is</p>
+    <p>FD-302 of a telephonic interview. In 2020 the subject was employed by an organization that assisted in registering people to vote; she was given a T-shirt and forms, could not remember the organization's name, was referred by a friend, and was told she would be paid.</p>
+    <p class="lab">Why it matters</p>
+    <p>Establishes the pay-per-registration structure that gives canvassers a motive to fabricate — the recognized failure mode of paid canvassing, and the reason most states regulate it. The 'others falsified' half of the filename is not recoverable from the released text.</p>
+    <p class="flag">OCR partial.</p>
+  </div>
+</article><article class="doc" id="sec3-13">
+  <header class="doc-head">
+    <h3>FD-302: Pot for Registrations</h3>
+    <div class="chips"><span class="chip stamp-warr" title="Declassified and/or approved for public release by Counsel to the President Warrington, 10 July 2026">WARRINGTON · 10 JUL</span><span class="chip plain">2 pp</span><span class="chip plain">18 December 2023</span><span class="chip warn" title="Image-only scan; text recovered by OCR is incomplete">OCR PARTIAL</span></div>
+    <p class="fname"><a class="open" href="https://drive.google.com/file/d/1gIHfgj5EUv6R5d70XK6KpH7UMwZDgao-/view" target="_blank" rel="noopener">Open in Drive &rarr;</a> <code>FBIMichigan Witness Interview Memo Pot For Registrations RELEASE MARKED.pdf</code></p>
+  </header>
+  <div class="doc-body">
+    <p class="lab">What it is</p>
+    <p>FD-302 of a canvasser who heard about the job through her uncle, wore a green and blue shirt, reported to an office that used to be an eye care center, canvassed for registrations outside a Walmart, and returned to the office at the end of each shift.</p>
+    <p class="lab">Why it matters</p>
+    <p>Same storefront operation as the other 302s. Nothing in the released text corresponds to the filename.</p>
+    <p class="flag">OCR partial. Filename claim not verifiable from released text.</p>
+  </div>
+</article><article class="doc doc-key" id="sec3-14">
+  <header class="doc-head">
+    <h3>FD-302: Sit in Car / Fake Registrations <span class="key-mark" title="Load-bearing document">KEY</span></h3>
+    <div class="chips"><span class="chip stamp-warr" title="Declassified and/or approved for public release by Counsel to the President Warrington, 10 July 2026">WARRINGTON · 10 JUL</span><span class="chip plain">2 pp</span><span class="chip plain">15 December 2023</span></div>
+    <p class="fname"><a class="open" href="https://drive.google.com/file/d/1HVNsW2PdgqQ8R2cStEv15RXaqsiOqZ_E/view" target="_blank" rel="noopener">Open in Drive &rarr;</a> <code>FBIMichigan Worker Interview Sit In Car Fake Registrations RELEASE MARKED.pdf</code></p>
+  </header>
+  <div class="doc-body">
+    <p class="lab">What it is</p>
+    <p>FD-302 of an interview arranged through a Michigan Department of Corrections parole officer. The subject had never heard of the organization, does not know anyone who works there, and has never worked in any job trying to register people to vote. He noted he has had issues with identity theft in the past and suggested someone with his information may have obtained a job using it.</p>
+    <p class="lab">Why it matters</p>
+    <p>Reads as exculpatory and is filed under a filename asserting the opposite. A person whose name appeared in the paperwork says he never worked there and may have been a victim of identity theft — which, if true, means some names in the 107 are stolen identities used by canvassers to pad quotas, not participants in a scheme. This is the clearest single example in the release of filenames pointing one way and documents pointing another.</p>
+    
+  </div>
+</article><article class="doc" id="sec3-15">
+  <header class="doc-head">
+    <h3>FD-302: Other States</h3>
+    <div class="chips"><span class="chip stamp-warr" title="Declassified and/or approved for public release by Counsel to the President Warrington, 10 July 2026">WARRINGTON · 10 JUL</span><span class="chip plain">1 p</span><span class="chip plain">18 December 2023</span><span class="chip warn" title="Image-only scan; text recovered by OCR is incomplete">OCR PARTIAL</span></div>
+    <p class="fname"><a class="open" href="https://drive.google.com/file/d/1S8-YnrFHFE_t0vPyfpXHA52tNXTigPNK/view" target="_blank" rel="noopener">Open in Drive &rarr;</a> <code>FBIMichigan Witness Interview Memo Other States RELEASE MARKED.pdf</code></p>
+  </header>
+  <div class="doc-body">
+    <p class="lab">What it is</p>
+    <p>FD-302 of a telephonic interview with a canvasser employed in 2020 by an organization that registered people to vote. Shifts were four hours; she reported to an office building where she was directed where to solicit registrations, and spent most shifts outside gas stations.</p>
+    <p class="lab">Why it matters</p>
+    <p>Nothing about other states is recoverable from the released page. On its face this is a description of shift logistics.</p>
+    <p class="flag">OCR partial. Filename claim not verifiable from released text.</p>
+  </div>
+</article><article class="doc" id="sec3-16">
+  <header class="doc-head">
+    <h3>FD-302: Probably Forged</h3>
+    <div class="chips"><span class="chip stamp-warr" title="Declassified and/or approved for public release by Counsel to the President Warrington, 10 July 2026">WARRINGTON · 10 JUL</span><span class="chip plain">1 p</span><span class="chip plain">20 December 2023</span><span class="chip warn" title="Image-only scan; text recovered by OCR is incomplete">OCR PARTIAL</span></div>
+    <p class="fname"><a class="open" href="https://drive.google.com/file/d/1Aq1ICA8aiD_7jH2AnI4tisatmVC8wI5A/view" target="_blank" rel="noopener">Open in Drive &rarr;</a> <code>FBIMichigan Witness Interview Memo Probably Forged Memos RELEASE MARKED.pdf</code></p>
+  </header>
+  <div class="doc-body">
+    <p class="lab">What it is</p>
+    <p>FD-302 of a canvasser who initially could not recall working for a company involved in the 2020 election and remembered only when reminded of where he applied — near a Dollar General. He recalled wearing bright neon clothing and working only a couple of weeks in the fall.</p>
+    <p class="lab">Why it matters</p>
+    <p>A witness with weak recall of two weeks of gig work three years earlier. Nothing in the released text establishes forgery.</p>
+    <p class="flag">OCR partial. Filename claim not verifiable from released text.</p>
+  </div>
+</article><article class="doc" id="sec3-17">
+  <header class="doc-head">
+    <h3>FD-302 (196)</h3>
+    <div class="chips"><span class="chip stamp-warr" title="Declassified and/or approved for public release by Counsel to the President Warrington, 10 July 2026">WARRINGTON · 10 JUL</span><span class="chip plain">2 pp</span><span class="chip plain">12 December 2023</span><span class="chip warn" title="Image-only scan; text recovered by OCR is incomplete">OCR PARTIAL</span></div>
+    <p class="fname"><a class="open" href="https://drive.google.com/file/d/17xx7CU0Xl0GfBdiR5hYKXZYjITHUlE5h/view" target="_blank" rel="noopener">Open in Drive &rarr;</a> <code>196 - RELEASE MARKED.pdf</code></p>
+  </header>
+  <div class="doc-body">
+    <p class="lab">What it is</p>
+    <p>FD-302 of a canvasser interviewed by two special agents on 12 December 2023. He worked for the organization in 2020 and was tasked to find people who were not registered to vote and to do whatever he could to get them registered.</p>
+    <p class="lab">Why it matters</p>
+    <p>The quota pressure, in a canvasser's own words. Bates-numbered rather than editorially titled, which is worth noting: the documents given descriptive filenames are the ones the task force wanted read a particular way.</p>
+    <p class="flag">OCR partial.</p>
+  </div>
+</article><article class="doc" id="sec3-18">
+  <header class="doc-head">
+    <h3>FD-302 (233)</h3>
+    <div class="chips"><span class="chip stamp-warr" title="Declassified and/or approved for public release by Counsel to the President Warrington, 10 July 2026">WARRINGTON · 10 JUL</span><span class="chip plain">1 p</span><span class="chip plain">20 December 2023</span><span class="chip warn" title="Image-only scan; text recovered by OCR is incomplete">OCR PARTIAL</span></div>
+    <p class="fname"><a class="open" href="https://drive.google.com/file/d/1KBx_WgQdy6tMfVjOgnqhPbAgrlZ6nTM-/view" target="_blank" rel="noopener">Open in Drive &rarr;</a> <code>233 - RELEASE MARKED.pdf</code></p>
+  </header>
+  <div class="doc-body">
+    <p class="lab">What it is</p>
+    <p>FD-302 of a canvasser who worked between September and October 2020, Monday to Friday 8:00am to 12:00pm, while caring for an elderly person. She was contacted about the job, went to an eyewear store near a Dollar General, provided her driver's licence and was given a W-2 and other paperwork.</p>
+    <p class="lab">Why it matters</p>
+    <p>Same storefront, same recruitment pattern. The W-2 detail matters: this was documented employment, which is why the FBI could reconstruct the canvasser list at all — and why a wholly covert scheme is a poor fit for the facts.</p>
+    
+  </div>
+</article><article class="doc" id="sec3-19">
+  <header class="doc-head">
+    <h3>FBI Grand Rapids letter</h3>
+    <div class="chips"><span class="chip stamp-warr" title="Declassified and/or approved for public release by Counsel to the President Warrington, 10 July 2026">WARRINGTON · 10 JUL</span><span class="chip plain">1 p</span><span class="chip plain">25 September 2025</span><span class="chip warn" title="Image-only scan; text recovered by OCR is incomplete">OCR PARTIAL</span></div>
+    <p class="fname"><a class="open" href="https://drive.google.com/file/d/1ZiIYieKRDZxCFcnUdDY4jKmmmsAjSRmn/view" target="_blank" rel="noopener">Open in Drive &rarr;</a> <code>265_0000001 - RELEASE MARKED.pdf</code></p>
+  </header>
+  <div class="doc-body">
+    <p class="lab">What it is</p>
+    <p>Department of Justice / FBI letterhead from Grand Rapids, Michigan, file 56D-DE-3407960, dated 25 September 2025. Addressee and body redacted.</p>
+    <p class="lab">Why it matters</p>
+    <p>Undatable in substance but useful in fact: the case file was still generating correspondence in September 2025, four years after PIN declined it and two months after the July 2025 302. Establishes the matter was reactivated in the run-up to this release.</p>
+    <p class="flag">OCR partial. Body redacted; letterhead, file number and date only.</p>
+  </div>
+</article><article class="doc doc-key" id="sec3-20">
+  <header class="doc-head">
+    <h3>Email: preparing to close / limited scope <span class="key-mark" title="Load-bearing document">KEY</span></h3>
+    <div class="chips"><span class="chip stamp-warr" title="Declassified and/or approved for public release by Counsel to the President Warrington, 10 July 2026">WARRINGTON · 10 JUL</span><span class="chip plain">2 pp</span><span class="chip plain">3–4 January 2022</span></div>
+    <p class="fname"><a class="open" href="https://drive.google.com/file/d/1biWP4Xct-g5I1BndcE3tT25WRRWNacf1/view" target="_blank" rel="noopener">Open in Drive &rarr;</a> <code>GBI Strategies -RELEASE MARKED.pdf</code></p>
+  </header>
+  <div class="doc-body">
+    <p class="lab">What it is</p>
+    <p>Email from an FBI Detroit agent assigned to the investigation to a prosecutor. He writes that the team is preparing to close the investigation, and wants first to discuss the limited scope PIN approved into the fraudulent voter registration applications. He cites the Public Integrity Section's own December 2017 manual, 'Federal Prosecution of Election Offenses,' quoting its treatment of submitting fictitious names to election officers for inclusion on voter registration rolls (52 U.S.C. §§ 1037(c), 20511(2)) and providing false information about a person's name, address or residence to establish eligibility, and argues this type of fraud would warrant a full field investigation.</p>
+    <p class="lab">Why it matters</p>
+    <p>The agent's dissent, and the strongest documented internal disagreement in the section. It is a real, well-grounded professional objection, citing DOJ's own manual against DOJ's scope limit. Report it as such — and report what happened next, which is that PIN did authorize a full field investigation, in February 2023. The disagreement was resolved in the agent's favour, thirteen months later.</p>
+    
+  </div>
+</article><article class="doc doc-key" id="sec3-21">
+  <header class="doc-head">
+    <h3>Email: not comfortable closing the case <span class="key-mark" title="Load-bearing document">KEY</span></h3>
+    <div class="chips"><span class="chip stamp-warr" title="Declassified and/or approved for public release by Counsel to the President Warrington, 10 July 2026">WARRINGTON · 10 JUL</span><span class="chip plain">3 pp</span><span class="chip plain">11 and 16 November 2021</span></div>
+    <p class="fname"><a class="open" href="https://drive.google.com/file/d/17MJ9Op3wBO7r1TD2_empsjmhJSihnHyP/view" target="_blank" rel="noopener">Open in Drive &rarr;</a> <code>FBIMichigan 2021 Dont Want To Close Memo RELEASE MARKED.pdf</code></p>
+  </header>
+  <div class="doc-body">
+    <p class="lab">What it is</p>
+    <p>Two emails. In the first, dated 11 November 2021, an FBI Detroit agent writes to a prosecutor that at their initial meeting he was somewhat unprepared, having not previously worked election matters; recalls the prosecutor's concerns about proving how fraudulent applications could impact the election and about willfulness; and says that having since read the PIN manual he has concerns about whether closing is appropriate, quoting its definition of election fraud as conduct intended to corrupt the process by which voters are registered. In the second, dated 16 November 2021, he tells a colleague he is not comfortable closing without raising these issues, and adds that he is 'not thrilled with the wording from [redacted] stating that the PIN concurs with our decision not to pursue it as opposed to the PIN directing us not to pursue it.'</p>
+    <p class="lab">Why it matters</p>
+    <p>The best document the administration has for this section, and it is narrower than the frame around it. An agent objects to closing and objects to the paperwork characterizing the decision as the field office's rather than PIN's — a real dispute about who owns a declination. But it is an argument between an agent and prosecutors about charging theory and willfulness, not evidence of political direction, and the agent's substantive position later prevailed.</p>
+    
+  </div>
+</article><article class="doc" id="sec3-22">
+  <header class="doc-head">
+    <h3>PIN EDMI declination</h3>
+    <div class="chips"><span class="chip stamp-warr" title="Declassified and/or approved for public release by Counsel to the President Warrington, 10 July 2026">WARRINGTON · 10 JUL</span><span class="chip plain">4 pp</span><span class="chip plain">June–August 2021</span></div>
+    <p class="fname"><a class="open" href="https://drive.google.com/file/d/1WUHTAdWMMDHSZYxcu6ScHs2OqfDWnWZ1/view" target="_blank" rel="noopener">Open in Drive &rarr;</a> <code>PIN EDMI declination - RELEASE MARKED.pdf</code></p>
+  </header>
+  <div class="doc-body">
+    <p class="lab">What it is</p>
+    <p>Email chain from 28 June to 12 August 2021. The chain opens with PIN's authorization to conduct a preliminary investigation and a request for a synopsis of findings to forward to PIN for further guidance. It closes on 12 August with word that PIN informally advised no further action should be taken in this district at this time, with an official response to follow, and a note that the status of any authorization for the Eastern District investigation was unknown.</p>
+    <p class="lab">Why it matters</p>
+    <p>Documents the first declination, in the ordinary sequence: authorize a preliminary investigation, review the synopsis, decline. Nothing in the chain indicates a reason other than the merits.</p>
+    
+  </div>
+</article><article class="doc doc-key" id="sec3-23">
+  <header class="doc-head">
+    <h3>PIN GBI declination <span class="key-mark" title="Load-bearing document">KEY</span></h3>
+    <div class="chips"><span class="chip stamp-warr" title="Declassified and/or approved for public release by Counsel to the President Warrington, 10 July 2026">WARRINGTON · 10 JUL</span><span class="chip plain">1 p</span><span class="chip plain">20 October and 4 November 2021</span></div>
+    <p class="fname"><a class="open" href="https://drive.google.com/file/d/1xxiRN6p6lzYgWs3zHzIS3rBnRtOXHMir/view" target="_blank" rel="noopener">Open in Drive &rarr;</a> <code>PIN GBI Declination - RELEASE MARKED.pdf</code></p>
+  </header>
+  <div class="doc-body">
+    <p class="lab">What it is</p>
+    <p>Two emails. On 20 October 2021 an FBI agent notes prior discussion of the state of the investigation, the results of the financial review, and the contents of the Michigan Attorney General's casefile provided to the FBI, and asks PIN for a letter stating its view on concurrence or non-concurrence. On 4 November 2021 PIN replies that it understands, based on previous calls with the agent and the US Attorney's Office for the Western District of Michigan and other information provided by both, that the respective offices have evaluated the matter and are not seeking further investigative or prosecutive action at this time, and that 'PIN agrees with that conclusion.'</p>
+    <p class="lab">Why it matters</p>
+    <p>The formal declination. Note what fed it: a financial review and the Michigan Attorney General's own casefile — state and federal investigators working the same matter and reaching the same place. Note also the wording the agent objected to twelve days later: PIN agrees with the field's conclusion rather than directing it. Both readings of that sentence are in this release, which is unusually fair of it.</p>
+    
+  </div>
+</article><article class="doc doc-key" id="sec3-24">
+  <header class="doc-head">
+    <h3>PIN 2023 delay memo <span class="key-mark" title="Load-bearing document">KEY</span></h3>
+    <div class="chips"><span class="chip stamp-warr" title="Declassified and/or approved for public release by Counsel to the President Warrington, 10 July 2026">WARRINGTON · 10 JUL</span><span class="chip plain">3 pp</span><span class="chip plain">3 October 2023</span></div>
+    <p class="fname"><a class="open" href="https://drive.google.com/file/d/1vj3PYk3XX3zFLPEVsQb2iHT2HM76oKuz/view" target="_blank" rel="noopener">Open in Drive &rarr;</a> <code>FBIMichigan PIN2023 Delay Memo - RELEASE MARKED.pdf</code></p>
+  </header>
+  <div class="doc-body">
+    <p class="lab">What it is</p>
+    <p>Email from DOJ's Public Integrity Section following a call about the proposed interviews of approximately 100 canvassers, to determine whether they submitted falsified applications in 2020, possibly to meet employment quotas. PIN explains the matter implicates the Department's election non-interference policy (JM § 9-85.300) and election-year sensitivities policy (JM § 9-85.500), because Michigan voter registration is unitary — registering a voter registers them for both federal and state elections — and because interviewing numerous canvassers close to the 7 November 2023 local elections may create a public perception of the Department and FBI acting to affect that election's outcome. PIN concurs in the interviews only after the November election is concluded, certified and uncontested, proposes December 2023, and concurs in coordination with state and local authorities and any appropriate covert investigative activity even before the election. Asks for consultation before overt activity near Michigan's 27 February 2024 presidential primary or 6 August 2024 state primary, and before any charges or public statements.</p>
+    <p class="lab">Why it matters</p>
+    <p>Presented by the filename as suppression; reads as a textbook application of two named, published DOJ policies, with the specific reasoning spelled out and a concrete date proposed. The interviews went ahead in December 2023 as PIN proposed — the FD-302s in this section are dated 13–20 December 2023. The delay was five weeks. It is worth noticing that the policy being applied here is the same non-interference norm whose abandonment would be the story if a comparable investigation were run four months before the 2026 midterms.</p>
+    
+  </div>
+</article><article class="doc doc-key" id="sec3-25">
+  <header class="doc-head">
+    <h3>Four Year Case Timeline <span class="key-mark" title="Load-bearing document">KEY</span></h3>
+    <div class="chips"><span class="chip stamp-warr" title="Declassified and/or approved for public release by Counsel to the President Warrington, 10 July 2026">WARRINGTON · 10 JUL</span><span class="chip plain">3 pp</span><span class="chip plain">compiled; covers 2020–2023</span></div>
+    <p class="fname"><a class="open" href="https://drive.google.com/file/d/119aRIhu0wXW9vVUqsDDq7eZ9Ni4mnnGP/view" target="_blank" rel="noopener">Open in Drive &rarr;</a> <code>FBIMichigan Four Year Case Timeline RELEASE MARKED.pdf</code></p>
+  </header>
+  <div class="doc-body">
+    <p class="lab">What it is</p>
+    <p>FBI timeline for case 56D-DE-3407960. Key entries: 27 October 2020, MSP briefs the FBI Detroit election team; 11 February 2021, request for concurrence to open; 11 March 2021, PIN authorizes a full field investigation into prepaid cards but does not authorize a voter fraud investigation; 16 March 2021, FFI opened; 1 April 2021, PIN concurs with contacting election and law enforcement authorities on voter fraud; 27 May 2021, interview; 1 and 7 July 2021, synopsis to and meeting with the AUSAs; 12 August 2021, PIN did not approve further action in the Western District; 2 November 2021, the Western District portion could be closed; 11 November 2021, agent emails concerns about closing; 4 January 2022, discussion with PIN; 10 March 2022, PIN advises previous guidance allows review of applications and database checks; 14 March 2022, 20 applications copied; 31 March 2022, results to PIN and USAO; 22 April 2022, 100 further applications copied; 1 August 2022, results provided; 10 November 2022, agent again requests guidance; 31 January 2023, PIN arranges a call; 2 February 2023, PIN authorizes a full field investigation; 3 February 2023, evidence obtained; 2 May 2023, database results on 107 applications; 8 May to 22 June 2023, eight canvassers interviewed and eight further attempted.</p>
+    <p class="lab">Why it matters</p>
+    <p>The spine of the section, and the best single artifact for reconstructing what happened. Read straight, it shows a case that was opened, narrowed, declined in one district, contested internally, reopened, escalated to a full field investigation, and worked through to interviews and database checks — slow and contentious, but never stopped. The March 2021 entry is the one the release wants read as suppression: PIN authorized the prepaid-cards angle and not the voter-fraud angle. It is also the entry that shows the eventual reversal in February 2023, on the same page.</p>
+    <p class="flag">Timeline continues past 22 June 2023; later entries not recovered from the released pages.</p>
+  </div>
+</article>
+</section><section class="sec" id="sec4">
+  <div class="sec-head">
+    <span class="sec-num">04</span>
+    <h2>Noncitizens on State Voter Rolls</h2>
+    <p class="sec-meta">2 documents &middot; <a href="https://drive.google.com/drive/folders/13fRMOPX9UpBkt3xNmVZ13u7gKxyiX-s5" target="_blank" rel="noopener">Open folder in Drive &rarr;</a></p>
+    <p class="sec-note">Two documents, both produced in 2026 for this release, neither declassified from anything. The section's central number is contradicted by a second number on the same page.</p>
+  </div>
+  <article class="doc doc-key" id="sec4-01">
+  <header class="doc-head">
+    <h3>Preventing Alien Voting — Alien Voter Registration Summary <span class="key-mark" title="Load-bearing document">KEY</span></h3>
+    <div class="chips"><span class="chip stamp-none" title="No declassification stamp — produced unclassified, or released without a declassification marking">NO STAMP</span><span class="chip plain">1 p</span><span class="chip plain">June 2026 data</span></div>
+    <p class="fname"><a class="open" href="https://drive.google.com/file/d/1JFXcS3m0gl8f9B8sYvDWk3IJUTLqJ0h3/view" target="_blank" rel="noopener">Open in Drive &rarr;</a> <code>Alien Voter Registration Summary.pdf_Redacted.pdf</code></p>
+  </header>
+  <div class="doc-body">
+    <p class="lab">What it is</p>
+    <p>DHS one-pager. States that DHS has initiated multiple investigations into allegations of non-citizen voting and registration, and that review of the first set of public voter files from states not using the SAVE system revealed that over 250,000 non-citizens are illegally registered to vote in just the four states reviewed — California, Pennsylvania, New Jersey and Nevada — whose officials have been notified. Separately states that as of 22 June 2026, 25 states processed more than 68 million registration records through the SAVE system, and that DHS enabled those states to identify over 400,000 deceased registrants and over 28,000 non-citizens who illegally registered. Refers to 'the activist Judge Sparkle Sooknanan' whose ruling suspended enhancements to the USCIS service pending appeal, and to states adopting 'alien-first policies instead of American-first policies.'</p>
+    <p class="lab">Why it matters</p>
+    <p>The two numbers on this page cannot both be right. SAVE — the system that actually checks citizenship against USCIS records — returned about 28,000 non-citizens across 68 million records, a rate near 0.04 percent. The 250,000 claim across four states with roughly 30 million combined registrants implies about 0.8 percent, twenty times the verified rate. No methodology is given for the 250,000; the difference between a SAVE match and a flag generated by reviewing a public file is the entire question, and the document does not address it. Note also that this is the only document in the release that editorializes in its own text — 'activist Judge,' 'alien-first policies' — which tells you what kind of product it is.</p>
+    
+  </div>
+</article><article class="doc doc-key" id="sec4-02">
+  <header class="doc-head">
+    <h3>Recognizing and Addressing Threats to Statewide Voter Registration Databases <span class="key-mark" title="Load-bearing document">KEY</span></h3>
+    <div class="chips"><span class="chip stamp-none" title="No declassification stamp — produced unclassified, or released without a declassification marking">NO STAMP</span><span class="chip plain">11 pp</span><span class="chip plain">July 2026</span></div>
+    <p class="fname"><a class="open" href="https://drive.google.com/file/d/1y-A7wJduAzoOxWhb5n318ayeUk-Ske5c/view" target="_blank" rel="noopener">Open in Drive &rarr;</a> <code>Voter Registration Database Threats - FINAL.pdf</code></p>
+  </header>
+  <div class="doc-body">
+    <p class="lab">What it is</p>
+    <p>An eleven-page unclassified overview of threats to statewide voter registration databases from foreign and domestic actors, drawing on IC, law enforcement and state election official reporting, intended to inform state and local election officials. Opens by asserting that recently declassified records revealed China breached multiple state voter registration systems prior to the 2020 election, that this is not new, that hackers have attempted to breach voter registration systems in all 50 states with confirmed successes in at least 20, and that experts have routinely minimized the significance of successful breaches. Argues for realistic assessment of threats and against minimizing risks, and calls for defenses to prevent stolen data being used to obtain absentee ballots, alter registration information, or add and delete registrants.</p>
+    <p class="lab">Why it matters</p>
+    <p>The circularity is on the first page. Its evidentiary premise is 'recently declassified records revealed that China breached multiple state voter registration systems' — that is, this release. So the task force's document cites the task force's release as proof of the claim the release was assembled to make, and then the underlying document in Section 02 turns out to say the data was publicly available on commercial websites. Everything downstream of that premise inherits it. Read as a threat assessment stripped of the premise, the mitigation advice is unobjectionable and largely matches CISA's; read as evidence, it is an assertion citing itself.</p>
+    
+  </div>
+</article>
+</section>
+
+  <section class="sec" id="method">
+    <div class="sec-head">
+      <span class="sec-num">&mdash;</span>
+      <h2>Method and limits</h2>
+    </div>
+    <div class="doc">
+      <div class="doc-body">
+        <p class="lab">What was checked</p>
+        <p>The Drive folder holds 58 PDFs across four folders. Every one was verified by byte size against the original download; all uploaded intact, and all 55 distinct documents in the release are present. Three files carry truncated 8.3 filenames from the upload (NICM_V~1.PDF, PRCUSP~1.PDF, EMAIL_~3.PDF); their contents are unaffected and their real titles are given above. Two stray .DS_Store files sit in the Michigan and Noncitizens folders and can be deleted.</p>
+        <p class="lab">Counts and duplicates</p>
+        <p>The download contains 59 PDF file paths but only 55 distinct documents. Four are byte-identical duplicates, confirmed by checksum: the August 2020 NICA, the CIA WIRe memo and the December 2021 "Everyone's favorite topic" email are each filed in both Section 01 and Section 02, and the four-country graphic email is stored twice inside Section 02, once at the folder root and once in the numbered subfolder. Drive holds 58 because that fourth redundant copy did not survive the upload &mdash; nothing distinct is missing. Both members of each cross-section pair are indexed above, since the filing itself is evidence of how the release was assembled.</p>
+        <p class="lab">Text recovery</p>
+        <p>Nearly every document is an image-only scan whose embedded text layer contains only the declassification stamp. All 59 were rasterised at 200 dpi and read by OCR. Entries tagged <span class="chip warn">OCR PARTIAL</span> are ones where redaction or scan quality left material unrecoverable; for those, the summary reflects only what is legible, and the "why it matters" note says so. Where a filename asserts something the released text does not support &mdash; which is common in Section 03 &mdash; that gap is flagged rather than papered over.</p>
+        <p class="lab">What this index does not do</p>
+        <p>It does not adjudicate the underlying intelligence questions, which would require the withheld material: the ICA drafts, the PDB at issue in the November 2020 chain, the Floris&ndash;Ugoretz communications log, the IIR recall statistics from 2019 to 2025, and the Person_Checks_2023.xlsx spreadsheet. Each of those is referenced in a released document and absent from the release.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+</div>
+</div>
+
+<footer>
+  <div class="wrap">
+    Compiled 17 July 2026 from the White House release as downloaded 16&ndash;17 July.<br>
+    Source folder: <a href="https://drive.google.com/drive/folders/1Cxr6sI1yauTstQImw2fK0moCgKKtoKQ4" target="_blank" rel="noopener">2026.7_2020 Election Files Declass</a> &middot; links open the original PDFs.<br>
+    Summaries are working notes, not a substitute for reading the documents.
+  </div>
+</footer>
+
+</body>
+</html>
